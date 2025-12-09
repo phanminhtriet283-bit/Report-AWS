@@ -12,7 +12,7 @@
 
     <link rel="icon" href="../../../images/favicon.png" type="image/png">
 
-    <title>Worklog Tuần 11 :: Báo cáo thực tập</title>
+    <title>Phụ lục &amp; Tài liệu đính kèm :: Báo cáo thực tập</title>
 
     
     <link href="../../../css/nucleus.css?1765296116" rel="stylesheet">
@@ -40,7 +40,7 @@
     
 
   </head>
-  <body class="" data-url="../../../vi/1-worklog/1.11-week11/">
+  <body class="" data-url="../../../vi/2-proposal/2.1-attachments/">
     <nav
   id="sidebar"
   class="showVisitedLinks"
@@ -106,7 +106,7 @@
   data-nav-id="/vi/1-worklog/"
   title="Nhật ký công việc"
   class="dd-item 
-        parent
+        
         
         
         "
@@ -305,7 +305,7 @@
   title="Worklog Tuần 11"
   class="dd-item 
         
-        active
+        
         
         "
 >
@@ -343,7 +343,7 @@
   data-nav-id="/vi/2-proposal/"
   title="Bản đề xuất"
   class="dd-item 
-        
+        parent
         
         
         "
@@ -362,7 +362,7 @@
   title="Phụ lục &amp; Tài liệu đính kèm"
   class="dd-item 
         
-        
+        active
         
         "
 >
@@ -801,14 +801,14 @@
                        
                 <option
                   id="en"
-                  value="https://phanminhtriet283-bit.github.io/Report-AWS/1-worklog/1.11-week11/"
+                  value="https://phanminhtriet283-bit.github.io/Report-AWS/2-proposal/2.1-attachments/"
                 >
                   English
                 </option>
                             
                 <option
                   id="vi"
-                  value="https://phanminhtriet283-bit.github.io/Report-AWS/vi/1-worklog/1.11-week11/"
+                  value="https://phanminhtriet283-bit.github.io/Report-AWS/vi/2-proposal/2.1-attachments/"
                   selected
                 >
                   Tiếng Việt
@@ -922,7 +922,7 @@
             
           
           
-            <a href='../../../vi/'>Báo cáo thực tập</a> > <a href='../../../vi/1-worklog/'>Nhật ký công việc</a> > Worklog Tuần 11
+            <a href='../../../vi/'>Báo cáo thực tập</a> > <a href='../../../vi/2-proposal/'>Bản đề xuất</a> > Phụ lục & Tài liệu đính kèm
           
         
           
@@ -938,10 +938,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#mục-tiêu-tuần-11">Mục tiêu tuần 11:</a></li>
-        <li><a href="#các-công-việc-trong-tuần">Các công việc trong tuần:</a></li>
-        <li><a href="#kết-quả-đạt-được">Kết quả đạt được:</a></li>
-        <li><a href="#tóm-tắt-kiến-thức-đạt-được">Tóm tắt kiến thức đạt được:</a></li>
+        <li><a href="#tài-liệu-đính-kèm">Tài liệu đính kèm</a></li>
       </ul>
     </li>
   </ul>
@@ -960,7 +957,7 @@
           
             <h1>
               
-              Worklog Tuần 11
+              Phụ lục &amp; Tài liệu đính kèm
             </h1>
           
 
@@ -968,131 +965,14 @@
 
 
 
-	<hr>
-<h3 id="mục-tiêu-tuần-11">Mục tiêu tuần 11:</h3>
-<p><strong>Phần 1 – Triển khai Front-end Serverless (S3 + CloudFront)</strong></p>
+	<h3 id="tài-liệu-đính-kèm">Tài liệu đính kèm</h3>
 <ul>
-<li>Hiểu kiến trúc hosting website tĩnh trên AWS.</li>
-<li>Tạo S3 bucket để lưu trữ file build frontend.</li>
-<li>Cấu hình CloudFront làm CDN phân phối nội dung toàn cầu.</li>
-<li>Bật HTTPS thông qua ACM Certificate.</li>
-<li>Cấu hình Origin Access Control (OAC) để CloudFront truy cập S3 an toàn.</li>
-<li>Chặn public access và áp dụng bucket policy chuẩn bảo mật.</li>
-</ul>
-<p><strong>Phần 2 – Tích hợp Cognito Authentication vào Frontend</strong></p>
+<li>Bản đề xuất FitAI Challenge bản docx:
 <ul>
-<li>Sử dụng User Pool &amp; App Client được tạo từ Tuần 8.</li>
-<li>Tạo UI đăng nhập/đăng ký hoặc dùng Hosted UI.</li>
-<li>Lấy JWT token (Access/ID Token) sau đăng nhập.</li>
-<li>Lưu token vào localStorage/sessionStorage.</li>
-<li>Tạo logic logout, token checking &amp; expiration.</li>
+<li>Tải docx: <a href="../../../attachments/FitAI_Proposal.docx">proposal.docx</a></li>
 </ul>
-<p><strong>Phần 3 – Frontend gọi API Gateway bằng JWT</strong></p>
-<ul>
-<li>Gửi Authorization header dạng: <code>Bearer &lt;JWT&gt;</code>.</li>
-<li>Test các API private yêu cầu Cognito Authorizer.</li>
-<li>Xử lý lỗi 401 (Unauthorized), 403 (Forbidden).</li>
-<li>Hiển thị dữ liệu trả về từ Backend trên UI.</li>
+</li>
 </ul>
-<p><strong>Phần 4 – Monitoring &amp; Debug</strong></p>
-<ul>
-<li>Bật CloudFront Access Logs.</li>
-<li>Kiểm tra API Gateway logs qua CloudWatch.</li>
-<li>Debug lỗi Lambda và xem end-to-end flow.</li>
-<li>Dọn dẹp resource test giảm chi phí.</li>
-</ul>
-<hr>
-<h3 id="các-công-việc-trong-tuần">Các công việc trong tuần:</h3>
-<table>
-  <thead>
-      <tr>
-          <th>Thứ</th>
-          <th>Công việc</th>
-          <th>Bắt đầu</th>
-          <th>Hoàn thành</th>
-          <th>Nguồn tài liệu</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>2</td>
-          <td><strong>Hosting Frontend lên S3</strong> <br>• Tạo bucket. <br>• Upload file build. <br>• Cấu hình index/error.</td>
-          <td>17/11/2025</td>
-          <td>17/11/2025</td>
-          <td>cloudjourney.awsstudygroup.com</td>
-      </tr>
-      <tr>
-          <td>3</td>
-          <td><strong>Tạo CloudFront Distribution</strong> <br>• Trỏ origin về S3. <br>• Thêm HTTPS (ACM). <br>• Bật OAC &amp; update bucket policy.</td>
-          <td>18/11/2025</td>
-          <td>18/11/2025</td>
-          <td>cloudjourney.awsstudygroup.com</td>
-      </tr>
-      <tr>
-          <td>4</td>
-          <td><strong>Tích hợp Cognito vào Frontend</strong> <br>• Lấy token từ User Pool (tuần 8). <br>• Lưu token vào trình duyệt. <br>• Tạo UI login/logout.</td>
-          <td>19/11/2025</td>
-          <td>19/11/2025</td>
-          <td>cloudjourney.awsstudygroup.com</td>
-      </tr>
-      <tr>
-          <td>5</td>
-          <td><strong>Frontend gọi API Gateway bằng JWT</strong> <br>• Gửi Authorization header. <br>• Test API private. <br>• Xử lý lỗi 401/403.</td>
-          <td>20/11/2025</td>
-          <td>20/11/2025</td>
-          <td>cloudjourney.awsstudygroup.com</td>
-      </tr>
-      <tr>
-          <td>6</td>
-          <td><strong>Monitoring &amp; Debug</strong> <br>• Review CloudFront logs. <br>• Debug API Gateway. <br>• Kiểm tra Lambda logs.</td>
-          <td>21/11/2025</td>
-          <td>21/11/2025</td>
-          <td>cloudjourney.awsstudygroup.com</td>
-      </tr>
-      <tr>
-          <td>7</td>
-          <td><strong>Cleanup tài nguyên</strong> <br>• Xóa CloudFront test. <br>• Xóa bucket test. <br>• Kiểm tra Billing.</td>
-          <td>22/11/2025</td>
-          <td>22/11/2025</td>
-          <td>cloudjourney.awsstudygroup.com</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h3 id="kết-quả-đạt-được">Kết quả đạt được:</h3>
-<h4 id="1-hoàn-thiện-hosting-frontend-serverless">1. Hoàn thiện hosting Frontend serverless</h4>
-<ul>
-<li>Triển khai web tĩnh bằng S3 + CloudFront hoàn chỉnh.</li>
-<li>Website chạy HTTPS và bảo mật bằng OAC.</li>
-<li>Tối ưu tốc độ nhờ global CDN.</li>
-</ul>
-<h4 id="2-tích-hợp-cognito-authentication-vào-ui">2. Tích hợp Cognito Authentication vào UI</h4>
-<ul>
-<li>Tái sử dụng User Pool cấu hình từ tuần 8.</li>
-<li>Lấy và lưu JWT token đúng chuẩn.</li>
-<li>Cài đặt login/logout &amp; token expiration logic.</li>
-</ul>
-<h4 id="3-gọi-api-gateway-từ-frontend-bằng-jwt">3. Gọi API Gateway từ Frontend bằng JWT</h4>
-<ul>
-<li>API private xác thực thành công bằng Cognito.</li>
-<li>UI xử lý lỗi 401/403 đúng logic.</li>
-<li>Data flow hoạt động mượt từ Frontend → API → Lambda.</li>
-</ul>
-<h4 id="4-debug--monitoring-hiệu-quả">4. Debug &amp; Monitoring hiệu quả</h4>
-<ul>
-<li>Theo dõi chi tiết request qua CloudFront logs.</li>
-<li>Debug API &amp; Lambda bằng CloudWatch.</li>
-<li>Tối ưu chi phí bằng cleanup resource test.</li>
-</ul>
-<hr>
-<h3 id="tóm-tắt-kiến-thức-đạt-được">Tóm tắt kiến thức đạt được:</h3>
-<ul>
-<li>S3 + CloudFront hosting mô hình serverless chuẩn AWS.</li>
-<li>Tích hợp Cognito Authentication không cần Amplify.</li>
-<li>Gọi API Gateway bằng JWT và xử lý lỗi bảo mật.</li>
-<li>Debug hệ thống toàn diện từ Edge → API → Backend.</li>
-</ul>
-<hr>
 
 
 
@@ -1133,6 +1013,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -1149,8 +1031,21 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
-                        
+            
+            
+                
                     
                 
                 
@@ -1312,26 +1207,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -1351,6 +1226,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1365,6 +1241,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -1384,6 +1261,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1735,10 +1615,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../../vi/1-worklog/1.10-week10/" title="Worklog Tuần 10"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../../vi/2-proposal/" title="Bản đề xuất"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../../vi/1-worklog/1.12-week12/" title="Worklog Tuần 12" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../../vi/3-blogstranslated/" title="Các bài blogs đã dịch" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
