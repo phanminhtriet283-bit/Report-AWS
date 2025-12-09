@@ -15,21 +15,21 @@
     <title>Blog 3 :: Internship Report</title>
 
     
-    <link href="../../css/nucleus.css?1765276671" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1765276671" rel="stylesheet">
-    <link href="../../css/hybrid.css?1765276671" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1765276671" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1765276671" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1765276671" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1765276671" rel="stylesheet">
-    <link href="../../css/theme.css?1765276671" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1765276671" rel="stylesheet">
+    <link href="../../css/nucleus.css?1765288544" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1765288544" rel="stylesheet">
+    <link href="../../css/hybrid.css?1765288544" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1765288544" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1765288544" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1765288544" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1765288544" rel="stylesheet">
+    <link href="../../css/theme.css?1765288544" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1765288544" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1765276671" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1765288544" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1765276671"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1765288544"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1765276671"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1765276671"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1765288544"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1765288544"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/phanminhtriet283-bit.github.io\/Report-AWS\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1765276671"></script>
+<script type="text/javascript" src="../../js/search.js?1765288544"></script>
  
   </div>
 
@@ -358,7 +358,7 @@
            
 <li
   data-nav-id="/3-blogstranslated/"
-  title="Translated AWS Blogs"
+  title="Translated Blog Posts"
   class="dd-item 
         parent
         
@@ -366,7 +366,7 @@
         "
 >
   <a href="../../3-blogstranslated/">
-     <b> 3. </b> Translated AWS Blogs 
+     <b> 3. </b> Translated Blog Posts 
     <i class="fas fa-check read-icon"></i>
     
   </a>
@@ -900,7 +900,7 @@
             
           
           
-            <a href='../../'>Internship Report</a> > <a href='../../3-blogstranslated/'>Translated AWS Blogs</a> > Blog 3
+            <a href='../../'>Internship Report</a> > <a href='../../3-blogstranslated/'>Translated Blog Posts</a> > Blog 3
           
         
           
@@ -914,12 +914,20 @@
                     <div class="progress">
   <div class="wrapper"><nav id="TableOfContents">
   <ul>
-    <li><a href="#why-this-region-matters">Why this region matters</a></li>
-    <li><a href="#infrastructure-design-of-the-new-zealand-region">Infrastructure design of the New Zealand Region</a></li>
-    <li><a href="#economic-investment--community-impact">Economic investment &amp; community impact</a></li>
-    <li><a href="#accelerating-ai--generative-ai-adoption">Accelerating AI &amp; Generative AI adoption</a></li>
-    <li><a href="#commitment-to-sustainability">Commitment to sustainability</a></li>
-    <li><a href="#expanded-options-for-customers">Expanded options for customers</a></li>
+    <li><a href="#networking--content-delivery">Networking &amp; Content Delivery</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#creating-a-new-cloudfront-distribution-with-an-ipv6-origin">Creating a new CloudFront distribution with an IPv6 origin</a>
+      <ul>
+        <li><a href="#step-1-begin">Step 1: Begin</a></li>
+        <li><a href="#step-2-specify-the-origin">Step 2: Specify the origin</a></li>
+        <li><a href="#step-3-enable-security">Step 3: Enable security</a></li>
+        <li><a href="#step-4-review-and-create">Step 4: Review and create</a></li>
+      </ul>
+    </li>
+    <li><a href="#adding-a-new-ipv6-origin-to-an-existing-cloudfront-distribution">Adding a new IPv6 origin to an existing CloudFront distribution</a></li>
+    <li><a href="#enabling-ipv6-for-an-existing-origin">Enabling IPv6 for an existing origin</a></li>
+    <li><a href="#validating-ipv6-connectivity-to-the-origin">Validating IPv6 connectivity to the origin</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
   </ul>
 </nav></div>
 </div>
@@ -944,99 +952,78 @@
 
 
 
-	<h1 id="launch-of-the-aws-asia-pacific-new-zealand-region">Launch of the AWS Asia Pacific (New Zealand) Region</h1>
-<p>Today, we are excited to announce the availability of the <strong>AWS Asia Pacific (New Zealand) Region – ap-southeast-6</strong>.<br>
-This new region enables customers to deploy workloads and store data within New Zealand, delivering <strong>lower latency</strong> and supporting organizations with local data residency and regulatory requirements.</p>
-<p><img src="../../images/3-BlogsTranslated/3.hinh1.png" alt="Figure 1: AWS Asia Pacific (New Zealand) Region"></p>
-<p><strong>Figure 1: AWS Asia Pacific (New Zealand) Region</strong></p>
+	<h2 id="networking--content-delivery"><a href="https://aws.amazon.com/blogs/networking-and-content-delivery/">Networking &amp; Content Delivery</a></h2>
+<p>Amazon CloudFront Now Supports IPv6 Origins for End-to-End IPv6 Delivery</p>
+<p>Written by Sagar Desarda and Ravi Avula on 04 SEP 2025 in <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/category/post-types/best-practices/">Best Practices</a>, <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/category/networking-content-delivery/">Networking &amp; Content Delivery</a>, <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/category/post-types/technical-how-to/">Technical How-To</a> <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-cloudfront-now-supports-ipv6-origins-for-end-to-end-ipv6-delivery/">Permalink</a>  <a href="https://aws.amazon.com/vi/blogs/networking-and-content-delivery/amazon-cloudfront-now-supports-ipv6-origins-for-end-to-end-ipv6-delivery/">Share</a></p>
+<p>IPv6 adoption continues to accelerate worldwide as organizations move beyond the limitations of IPv4 address space. At Amazon Web Services (AWS), we have long supported IPv6 from end users to the <a href="https://aws.amazon.com/cloudfront/">Amazon CloudFront network</a>, helping end users reduce latency, improve performance, and expand reach across modern mobile networks. Today, we are excited to take another step forward. Starting today, CloudFront now supports IPv6 connectivity from edge to origin—enabling a truly end-to-end IPv6 delivery path. This allows end users to use CloudFront as a dual-stack IPv6 and IPv4 Internet gateway for their web applications to provide content acceleration.</p>
+<p><strong>Why is this important?</strong></p>
+<p>IPv6 is the foundational transport protocol for most modern mobile networks and an increasing share of broadband traffic. Enabling IPv6 to the origin allows you to maintain consistency of protocol across the delivery chain, reduce operational costs from dual-stack complexity, and achieve more deterministic, observable, and efficient traffic flows. For CloudFront end users, these benefits translate directly into faster page loads, more stable streaming, and an architecture that continues to operate reliably as IPv4 resources deplete.</p>
+<p><strong>Benefits of IPv6 for CloudFront-backed applications</strong></p>
+<p>CloudFront now supports origins over IPv6, enabling end-to-end IPv6 connectivity from end users to your origin servers. This unlocks a wide range of technical and operational advantages over traditional IPv4-based delivery.</p>
+<ol>
+<li>
+<p><strong>Eliminates NAT costs and improves performance</strong><br>
+IPv4 networks rely heavily on Network Address Translation (NAT), especially carrier-grade NAT used by ISPs and mobile operators. These NAT layers introduce delays during connection establishment, limit port availability, and can cause packet drops. IPv6 removes the need for NAT, enabling direct end-to-end connectivity between clients, CloudFront, and origin servers. This results in lower latency, faster page loads, and better user experience—especially in mobile-first markets with high IPv6 adoption.</p>
+</li>
+<li>
+<p><strong>More efficient packet processing</strong><br>
+IPv6 introduces simplified headers and fixed-length extension headers for optional control information. This makes packet parsing and forwarding more efficient for routers, firewalls, load balancers, and CloudFront nodes. IPv6 reduces per-packet processing overhead and eliminates ambiguity in forwarding or deep packet inspection systems. Unlike IPv4, which allows fragmentation along the routing path, IPv6 delegates all fragmentation responsibility to the source server. This architectural constraint improves transmission performance by reducing retransmissions and maintaining optimal segment sizes throughout the transport path. As a result, IPv6 enables more stable and efficient TCP connections, especially over long-haul or high-latency paths between CloudFront and origins.</p>
+</li>
+<li>
+<p><strong>Predictable path control and congestion handling</strong><br>
+IPv6 enforces end-to-end Path MTU Discovery (PMTUD), fully delegating fragmentation responsibility to the source. This improves transmission predictability and minimizes risks of packet drops or fragmentation due to MTU mismatches. IPv6 improves TCP stability and throughput—especially across long-haul or high-latency paths between CloudFront and non-AWS origins—by reducing retransmissions and maintaining optimal segment sizes end-to-end.<br>
+For AWS origins, similar benefits are achieved today thanks to AWS backbone features like jumbo frame support. Enabling jumbo frames between AWS edge locations and application endpoints in AWS Regions allows CloudFront to send and receive larger payloads per packet. Jumbo frames reduce the total time required to transmit data between end users and your application.</p>
+</li>
+<li>
+<p><strong>Higher connection scalability</strong><br>
+Under IPv4, NAT reduces the number of available source ports per origin IP address, limiting the number of concurrent connections a CloudFront node can establish with an origin. This constraint can become problematic in high-traffic environments where thousands of concurrent requests must be handled efficiently. This is especially beneficial when using protocols like HTTP/2, where multiplexing multiple streams over a single connection and reusing connections is critical for maximizing performance and minimizing latency.</p>
+</li>
+</ol>
 <hr>
-<h2 id="why-this-region-matters">Why this region matters</h2>
-<p>The new region provides customers an additional option to deploy applications closer to end users in New Zealand. This is especially important for industries such as:</p>
-<ul>
-<li>financial services,</li>
-<li>government,</li>
-<li>healthcare,</li>
-<li>media &amp; telecommunications,</li>
-<li>and organizations requiring strong data sovereignty.</li>
-</ul>
-<p>The region improves:</p>
-<ul>
-<li>latency,</li>
-<li>availability,</li>
-<li>durability,</li>
-<li>and user experience across the APAC area.</li>
-</ul>
+<h2 id="getting-started">Getting Started</h2>
+<p>Beginning today, you can configure origins associated with your CloudFront distribution to use IPv6. The new feature allows you to choose between IPv4 (default), IPv6, or Dualstack (IPv4 and IPv6). For existing origins, CloudFront continues to use IPv4. When using Dualstack, CloudFront automatically selects between IPv4 and IPv6 to ensure even load distribution across both.</p>
+<p>You can use the CloudFront console or CloudFront API to create or update your distribution to configure IPv6 connectivity with your origin. In this post, we guide you through creating an IPv6-enabled origin and explore best practices for safely enabling IPv6 on existing origins. Before starting, ensure that your origin supports IPv6 or dual-stack connectivity. This may be a custom origin or an AWS service that supports IPv6, such as <a href="https://aws.amazon.com/elasticloadbalancing/">Elastic Load Balancers</a>, <a href="https://aws.amazon.com/api-gateway/">Amazon API Gateway</a>, or <a href="https://aws.amazon.com/lambda/">AWS Lambda Function URLs</a>.</p>
 <hr>
-<h2 id="infrastructure-design-of-the-new-zealand-region">Infrastructure design of the New Zealand Region</h2>
-<p>The AWS Asia Pacific (New Zealand) Region includes:</p>
-<ul>
-<li><strong>3 Availability Zones (AZs)</strong></li>
-<li>multiple layers of security controls</li>
-<li>high-performance, low-latency networking</li>
-</ul>
-<p>Each Availability Zone is located in a separate geographic area and is designed to be:</p>
-<ul>
-<li>physically isolated,</li>
-<li>yet interconnected for <strong>high availability</strong></li>
-<li>and fault-tolerant architectures.</li>
-</ul>
+<h2 id="creating-a-new-cloudfront-distribution-with-an-ipv6-origin">Creating a new CloudFront distribution with an IPv6 origin</h2>
+<p>In the CloudFront console, choose the option to create a CloudFront distribution.</p>
+<h3 id="step-1-begin">Step 1: Begin</h3>
+<p>Enter the distribution name and any other optional parameters before selecting <strong>Next</strong> to proceed to Step 2.</p>
+<p><img src="../../images/3-BlogsTranslated/h1.png" alt="Initialize your CloudFront distribution"></p>
+<h3 id="step-2-specify-the-origin">Step 2: Specify the origin</h3>
+<p>In Step 2, select the origin type and enter origin information. To configure IPv6, choose custom origin settings in the Settings panel.</p>
+<p><img src="../../images/3-BlogsTranslated/h2.png" alt="Configure your CloudFront origin"></p>
+<p>Select <strong>IPv6</strong> or <strong>Dualstack</strong> for the <em>Origin IP Address Type</em> and choose <strong>Next</strong>.</p>
+<p><img src="../../images/3-BlogsTranslated/h3.png" alt="Origin IP address type settings"></p>
+<h3 id="step-3-enable-security">Step 3: Enable security</h3>
+<p>You may choose to enable <a href="https://aws.amazon.com/waf/">AWS WAF</a> to protect your application and select <strong>Next</strong>.<br>
+<img src="../../images/3-BlogsTranslated/h4.png" alt="Attach AWS WAF to CloudFront distribution"></p>
+<h3 id="step-4-review-and-create">Step 4: Review and create</h3>
+<p>Review and select <strong>Create distribution</strong> to create the distribution.</p>
+<p><img src="../../images/3-BlogsTranslated/h5.png" alt="Confirm CloudFront settings and deploy"></p>
 <hr>
-<h2 id="economic-investment--community-impact">Economic investment &amp; community impact</h2>
-<p>AWS is committed to long-term investment in New Zealand. Over the coming years, AWS will:</p>
-<ul>
-<li>contribute to GDP growth,</li>
-<li>create new jobs,</li>
-<li>expand the AWS Partner ecosystem,</li>
-<li>and accelerate innovation across industries.</li>
-</ul>
-<p>AWS is also collaborating with universities and training programs to:</p>
-<ul>
-<li>upskill the future cloud workforce,</li>
-<li>and support digital transformation across New Zealand.</li>
-</ul>
+<h2 id="adding-a-new-ipv6-origin-to-an-existing-cloudfront-distribution">Adding a new IPv6 origin to an existing CloudFront distribution</h2>
+<p>To add a new IPv6 origin to an existing CloudFront distribution, open the Distribution settings by selecting the distribution and choosing the <strong>Origins</strong> tab to <strong>Create origin</strong>.</p>
+<p><img src="../../images/3-BlogsTranslated/h6.png" alt="Attach IPv6 origin to CloudFront distribution"></p>
+<p>Expand the <strong>Additional settings</strong> panel and choose the IPv6 or Dualstack option for the <em>Origin IP Address Type</em> to enable IPv6 connectivity. When you create the origin, add or update cache behaviors to point to your new origin.</p>
+<p><img src="../../images/3-BlogsTranslated/h7.png" alt="Expand additional settings"></p>
 <hr>
-<h2 id="accelerating-ai--generative-ai-adoption">Accelerating AI &amp; Generative AI adoption</h2>
-<p>This new region empowers organizations to run AI/ML workloads locally, including:</p>
-<ul>
-<li>Amazon Bedrock,</li>
-<li>Amazon SageMaker,</li>
-<li>real-time inference with lower latency,</li>
-<li>secure training and deployment under data residency requirements.</li>
-</ul>
-<p>AWS emphasizes building AI systems that are sustainable, secure, and responsible.</p>
+<h2 id="enabling-ipv6-for-an-existing-origin">Enabling IPv6 for an existing origin</h2>
+<p>You can use <a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/continuous-deployment.html">CloudFront continuous deployment</a> to safely roll out changes to origin settings. Continuous deployment allows you to test changes safely using a deployment policy to route requests to a staging distribution, validate the changes, and then promote them. For details, refer to the <a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/working-with-staging-distribution-continuous-deployment-policy.html">CloudFront documentation</a>.</p>
+<p><img src="../../images/3-BlogsTranslated/h8.png" alt="Configure Dualstack origin"></p>
 <hr>
-<h2 id="commitment-to-sustainability">Commitment to sustainability</h2>
-<p>AWS aims to:</p>
-<ul>
-<li>power its operations with <strong>100% renewable energy by 2025</strong>,</li>
-<li>move toward carbon neutrality,</li>
-<li>and design data centers optimized for energy efficiency.</li>
-</ul>
-<p>Data centers in New Zealand follow AWS’s sustainability best practices, helping customers reduce the energy footprint of their cloud workloads.</p>
+<h2 id="validating-ipv6-connectivity-to-the-origin">Validating IPv6 connectivity to the origin</h2>
+<p>Use metrics or application logs to validate IPv6 traffic at the origin. In this example, we used an <a href="https://aws.amazon.com/elasticloadbalancing/application-load-balancer/">Application Load Balancer (ALB)</a> as the origin and validated using the <strong>IPv6 Request Count</strong> metric.</p>
+<p><img src="../../images/3-BlogsTranslated/h9.png" alt="Monitor IPv6 origin traffic"></p>
 <hr>
-<h2 id="expanded-options-for-customers">Expanded options for customers</h2>
-<p>With this new region, customers can:</p>
-<ul>
-<li>build multi-region architectures,</li>
-<li>implement <strong>disaster recovery (DR)</strong> and <strong>business continuity (BCP)</strong> plans,</li>
-<li>use multi-AZ replication strategies,</li>
-<li>and increase reliability and fault tolerance.</li>
-</ul>
-<p>AWS continues to support customers in innovating faster, operating securely, and scaling globally.</p>
-<hr>
-<h1 id="conclusion">Conclusion</h1>
-<p>The launch of the <strong>AWS Asia Pacific (New Zealand) Region</strong> marks an important milestone in AWS’s long-term commitment to the Asia-Pacific region.</p>
-<p>This region provides:</p>
-<ul>
-<li>lower latency,</li>
-<li>improved data sovereignty,</li>
-<li>enhanced support for AI/ML workloads,</li>
-<li>and a secure foundation for business growth and innovation.</li>
-</ul>
-<hr>
-<h1 id="authors">Authors</h1>
-<p><strong>Bill Vass – VP of Engineering, AWS</strong><br>
-<strong>Prasad Kalyanaraman – VP of Infrastructure Services, AWS</strong></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>As IPv6 adoption continues to increase across mobile and global networks, enabling end-to-end IPv6—from end users to Amazon CloudFront to your origin—unlocks performance and architectural advantages that IPv4 cannot match. It eliminates NAT costs, improves routing visibility and flow control, and streamlines packet processing through fixed headers and reliable Path MTU Discovery. While CloudFront optimizes for both IPv4 and IPv6, the benefits of IPv6 are most pronounced in the first and last mile of content delivery. Adopting end-to-end IPv6 lays the foundation for scalable, high-performance, future-ready content delivery.</p>
+<p>Enabling full IPv6 support on Amazon CloudFront is no longer optional—it is a fundamental step toward unlocking lower latency, higher resiliency, and future scalability. If you haven’t already, enable IPv6 support in your <a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistValuesGeneral.html#DownloadDistValuesEnableIPv6">CloudFront distribution</a> today.</p>
+<p><img src="../../images/3-BlogsTranslated/h10.png" alt="A person wearing a black shirt (AI-generated image may be inaccurate)"></p>
+<p><strong>Sagar Desarda</strong><br>
+Sagar Desarda is the Head of Technical Account Management (TAM) and Business Development (BD) for Data, Analytics, and GenAI ISVs. His teams collaborate with customers to optimize their AWS architectures, ensure smooth operation of business-critical applications, accelerate adoption, and drive go-to-market success across North America. Sagar is also the AMER lead for the Edge Services Specialist group, where he drives new business growth, oversees technical engagements, and authors customer-facing publications.</p>
+<p><img src="../../images/3-BlogsTranslated/h11.png" alt="A person with a mustache and striped shirt (AI-generated image may be inaccurate)"></p>
+<p><strong>Ravi Avula</strong><br>
+Ravi is a Senior Solutions Architect at AWS focused on Enterprise Architecture. He has 20 years of software engineering experience and has held multiple leadership roles in software engineering and software architecture within the payments industry.</p>
 
 
 
@@ -1677,19 +1664,19 @@ This new region enables customers to deploy workloads and store data within New 
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1765276671"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1765276671"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1765276671"></script>
-    <script src="../../js/jquery.sticky.js?1765276671"></script>
-    <script src="../../js/featherlight.min.js?1765276671"></script>
-    <script src="../../js/highlight.pack.js?1765276671"></script>
+    <script src="../../js/clipboard.min.js?1765288544"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1765288544"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1765288544"></script>
+    <script src="../../js/jquery.sticky.js?1765288544"></script>
+    <script src="../../js/featherlight.min.js?1765288544"></script>
+    <script src="../../js/highlight.pack.js?1765288544"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1765276671"></script>
-    <script src="../../js/learn.js?1765276671"></script>
-    <script src="../../js/hugo-learn.js?1765276671"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1765288544"></script>
+    <script src="../../js/learn.js?1765288544"></script>
+    <script src="../../js/hugo-learn.js?1765288544"></script>
 
-    <link href="../../mermaid/mermaid.css?1765276671" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1765276671"></script>
+    <link href="../../mermaid/mermaid.css?1765288544" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1765288544"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -15,21 +15,21 @@
     <title>Blog 1 :: Báo cáo thực tập</title>
 
     
-    <link href="../../../css/nucleus.css?1765276671" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1765276671" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1765276671" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1765276671" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1765276671" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1765276671" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1765276671" rel="stylesheet">
-    <link href="../../../css/theme.css?1765276671" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1765276671" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1765288544" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1765288544" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1765288544" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1765288544" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1765288544" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1765288544" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1765288544" rel="stylesheet">
+    <link href="../../../css/theme.css?1765288544" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1765288544" rel="stylesheet">
     
-    <link href="../../../css/theme-workshop.css?1765276671" rel="stylesheet">
+    <link href="../../../css/theme-workshop.css?1765288544" rel="stylesheet">
     
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1765276671"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1765288544"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1765276671"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1765276671"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1765288544"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1765288544"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/phanminhtriet283-bit.github.io\/Report-AWS\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1765276671"></script>
+<script type="text/javascript" src="../../../js/search.js?1765288544"></script>
  
   </div>
 
@@ -914,16 +914,7 @@
                     <div class="progress">
   <div class="wrapper"><nav id="TableOfContents">
   <ul>
-    <li><a href="#1-cần-đưa-những-gì-vào-vault">1. Cần đưa những gì vào vault?</a></li>
-    <li><a href="#2-khôi-phục-sẽ-trông-như-thế-nào">2. Khôi phục sẽ trông như thế nào?</a></li>
-    <li><a href="#3-vault-sẽ-được-phân-vùng-như-thế-nào">3. Vault sẽ được phân vùng như thế nào?</a></li>
-    <li><a href="#4-làm-thế-nào-để-quản-lý-vault">4. Làm thế nào để quản lý vault?</a></li>
-    <li><a href="#5-làm-thế-nào-để-lập-kế-hoạch-cho-khâu-hậu-cần-và-nhà-cung-cấp-dịch-vụ">5. Làm thế nào để lập kế hoạch cho khâu hậu cần và nhà cung cấp dịch vụ?</a></li>
-    <li><a href="#6-ai-là-người-chịu-trách-nhiệm-cho-quy-trình-vaulting">6. Ai là người chịu trách nhiệm cho quy trình vaulting?</a></li>
-    <li><a href="#7-tại-sao-cần-có-sự-bảo-trợ">7. Tại sao cần có sự bảo trợ?</a></li>
-    <li><a href="#bắt-đầu-với-aws">Bắt đầu với AWS</a></li>
-    <li><a href="#kết-luận">Kết luận</a></li>
-    <li><a href="#tác-giả">Tác giả</a></li>
+    <li><a href="#từ-người-hâm-mộ-thống-kê-đến-nhà-tiên-phong-phân-tích-nfl-hành-trình-của-mike-band"><strong>Từ người hâm mộ thống kê đến nhà tiên phong phân tích NFL: hành trình của Mike Band</strong></a></li>
   </ul>
 </nav></div>
 </div>
@@ -948,101 +939,58 @@
 
 
 
-	<h1 id="khả-năng-phục-hồi-trong-thiết-kế-xây-dựng-chiến-lược-khôi-phục-hiệu-quả-trước-ransomware">Khả năng phục hồi trong thiết kế: Xây dựng chiến lược khôi phục hiệu quả trước ransomware</h1>
-<p>Các sự cố ransomware đã trở thành một vấn đề được ưu tiên trong các cuộc họp lãnh đạo của các tổ chức hiện đại. Dữ liệu cho thấy một xu hướng rõ ràng: số lượng sự cố ransomware đã tăng hơn gấp đôi kể từ khi đại dịch bắt đầu, trong đó lĩnh vực dịch vụ tài chính đặc biệt bị nhắm mục tiêu nhiều. Tại AWS, sự hợp tác đa lĩnh vực của chúng tôi với các khách hàng trong ngành dịch vụ tài chính toàn cầu, cơ quan quản lý, tổ chức điều hành và các đối tác trong ngành đã tạo ra một kiến trúc được chứng nhận cho Cloud Hosted Data Vault (CHDV), hay còn gọi ngắn gọn là vault.</p>
-<p>Vault là một yếu tố then chốt trong việc tăng cường khả năng phục hồi vận hành (operational resilience) trước các sự cố mạng quy mô lớn. Vault đóng vai trò như một tuyến phòng thủ cuối cùng, được cách ly hoàn toàn, bảo vệ những tài sản có tính nhiệm vụ quan trọng nhất của tổ chức bạn. Nó cho phép doanh nghiệp của bạn có thể phục hồi nếu các cơ chế truyền thống như High Availability (HA), Business Continuity (BC), Disaster Recovery (DR) và backup không còn đảm bảo được khả năng khôi phục. Việc tích hợp vault vào các thực hành resilience hiện có của bạn đòi hỏi phải lập kế hoạch cẩn thận trên nhiều phương diện. Trong bài viết này, chúng tôi sẽ xem xét những yếu tố cần cân nhắc khi lập kế hoạch, và cách bạn có thể bổ sung thêm các lớp bảo vệ cho các giải pháp HA, BC/DR và backup hiện có. Chúng tôi cũng sẽ đề cập đến các yếu tố chính không chỉ trong việc triển khai công nghệ mà còn về con người, quy trình và những yếu tố thực tiễn giúp vault hoạt động hiệu quả như một giải pháp hoàn chỉnh.</p>
-<hr>
-<h2 id="1-cần-đưa-những-gì-vào-vault">1. Cần đưa những gì vào vault?</h2>
-<p>Mỗi chủ sở hữu đơn vị kinh doanh đều sẽ nói rằng “mọi thứ, ở mọi nơi” đều cần được bảo vệ. Thực tế thì không phải vậy — hoặc ít nhất là không phải ngay lập tức. Khi suy nghĩ về một sự cố mạng quy mô lớn, rất dễ rơi vào suy nghĩ rằng tất cả dữ liệu, ứng dụng và dịch vụ đều quan trọng và cần được đưa vào vault. Bạn có thể cho rằng, nếu một thành phần đang tồn tại trong môi trường production thì chắc chắn nó cần thiết. Tuy nhiên, việc cố gắng đưa mọi thứ vào vault mà không có bước xem xét ban đầu hợp lý có thể dẫn đến khối lượng dữ liệu khổng lồ, chi phí cao, và độ trễ khôi phục ngoài ý muốn.</p>
-<p>Trong một sự cố mạng thực sự, bạn cần tự hỏi: đâu là các chức năng CNTT cốt lõi và dịch vụ vận hành mà bạn cần để khởi động lại hoạt động kinh doanh trong 12, 24 hoặc 48 giờ tới — và quan trọng không kém là, những gì không cần thiết? Những chức năng và dịch vụ cốt lõi này thường được gọi là Minimum Viable Business (MVB) — tức là phần tối thiểu cần thiết để doanh nghiệp duy trì hoạt động. Chúng không chỉ bao gồm các dịch vụ dành cho khách hàng của bạn, mà còn cả cho đối tác cấp hai, cấp ba và cấp bốn.</p>
-<p><img src="../../../images/3-BlogsTranslated/1.hinh1.png" alt="Hình 1: Cần đưa những gì vào vault? – Tập trung vào các chức năng CNTT cốt lõi và các dịch vụ vận hành."></p>
-<p>Hình 1: Cần đưa những gì vào vault? – Tập trung vào các chức năng CNTT cốt lõi và các dịch vụ vận hành.</p>
-<p>Câu hỏi này không thể được trả lời trong một sớm một chiều. Vault không chỉ là một giải pháp công nghệ — nó đòi hỏi sự tham gia từ nhiều bộ phận khác nhau. Việc xác định MVB của bạn và cách bảo vệ nó tốt nhất phụ thuộc vào ý kiến, kinh nghiệm và kiến thức tổng hợp từ nhiều nhóm: CNTT, bảo mật, pháp lý, các chủ sở hữu đơn vị kinh doanh, chủ sở hữu ứng dụng và các lãnh đạo cấp cao.</p>
-<hr>
-<h2 id="2-khôi-phục-sẽ-trông-như-thế-nào">2. Khôi phục sẽ trông như thế nào?</h2>
-<p>Các sự cố mạng được thiết kế để khiến việc khôi phục hệ thống hoặc dịch vụ của bạn trở nên khó khăn — thậm chí là gần như không thể — thông qua các cơ chế khôi phục vận hành tiêu chuẩn như HA, BC, DR và Backup. Những kẻ tấn công muốn gây gián đoạn tối đa với khả năng khôi phục tối thiểu, nhằm buộc nạn nhân phải trả tiền chuộc.</p>
-<p>Một sự cố mạng quy mô lớn không thể chỉ dựa vào các phương thức khôi phục vận hành thông thường, do đó bạn cần chuẩn bị trước một số yếu tố quan trọng sau đây để ứng phó hiệu quả.</p>
-<p><strong>Decision Time Objective (DTO):</strong> Mất bao lâu để kích hoạt quá trình khôi phục từ vault?<br>
-Các quy trình khôi phục được tự động hóa cao trong những môi trường an toàn, đáng tin cậy có thể đã bị xâm phạm, dẫn đến mất độ tin cậy hoặc không thể sử dụng được do hành động phá hoại. Vì vậy, điều quan trọng là phải điều phối con người và các điểm ra quyết định then chốt về thời điểm cần kích hoạt khôi phục toàn phần hoặc một phần từ vault.</p>
-<p><strong>Cyber-Recovery Time Objective (C-RTO) và Cyber-Recovery Point Objective (C-RPO):</strong><br>
-Cần điều chỉnh kỳ vọng về thời gian khôi phục, xem xét mức độ ảnh hưởng và thời gian phục hồi tăng lên trong trường hợp xảy ra sự cố mạng. Những quy trình từng chỉ mất vài giây giờ đây có thể kéo dài nhiều ngày, và doanh nghiệp cần chuẩn bị kế hoạch phản ứng phù hợp cho tình huống này.</p>
-<p><strong>Minimum Acceptable Service Offering (MASO):</strong><br>
-Trong khi MVB tập trung vào hoạt động nội bộ của doanh nghiệp bạn, thì MASO đặt câu hỏi: mức độ dịch vụ tối thiểu nào có thể chấp nhận được để cung cấp cho khách hàng và các bên thứ ba?<br>
-Điều này có thể bao gồm một phần chức năng giới hạn của dịch vụ chính, hoặc một hệ thống dự phòng được truy cập thông qua phương thức thay thế khác.</p>
-<p><img src="../../../images/3-BlogsTranslated/1..hinh2.png" alt="Hình 2: Khôi phục sẽ trông như thế nào? – Những gì thường diễn ra trong vài giây có thể kéo dài nhiều ngày, hãy lập kế hoạch trước."></p>
-<p>Hình 2: Khôi phục sẽ trông như thế nào? – Những gì thường diễn ra trong vài giây có thể kéo dài nhiều ngày, hãy lập kế hoạch trước.</p>
-<hr>
-<h2 id="3-vault-sẽ-được-phân-vùng-như-thế-nào">3. Vault sẽ được phân vùng như thế nào?</h2>
-<p>Dù bạn lựa chọn một vault cho toàn bộ hệ thống hay mỗi dịch vụ một vault riêng, điều quan trọng là phải đạt được sự cân bằng giữa khả năng quản lý, tính thực tiễn và mức độ bảo mật.</p>
-<p><strong>Sự đơn giản:</strong> Giữ cho các vault rõ ràng, dễ hiểu, dễ điều hướng và dễ khôi phục nhất có thể. Sự phức tạp chỉ khiến quá trình khôi phục bị trì hoãn.</p>
-<p><strong>Tính độc lập:</strong> Mỗi vault nên hoạt động độc lập để giảm thời gian chờ đợi và tăng khả năng thực hiện song song trong quá trình khôi phục.</p>
-<p><strong>Ánh xạ dịch vụ:</strong> Xác định điểm bắt đầu khôi phục ở đâu và thứ tự khôi phục tối ưu là gì.</p>
-<p><strong>Vai trò và trách nhiệm:</strong> Các chủ sở hữu và quản trị viên cần được phân bổ rõ ràng theo dịch vụ, ứng dụng và hạ tầng mà họ phụ trách.</p>
-<p><strong>Bảo trì:</strong> Vault không phải là một thực thể tĩnh, vì ứng dụng luôn được cập nhật và các trường hợp sử dụng của doanh nghiệp thay đổi theo thời gian.</p>
-<p><img src="../../../images/3-BlogsTranslated/1.hinh3.png" alt="Hình 3: Vault sẽ được phân vùng như thế nào? – Cân bằng giữa khả năng quản lý, nội dung và quy trình khôi phục."></p>
-<p>Hình 3: Vault sẽ được phân vùng như thế nào? – Cân bằng giữa khả năng quản lý, nội dung và quy trình khôi phục.</p>
-<p>Tính linh hoạt mà AWS mang lại là vô giá, vì nó cho phép bạn thử nghiệm, thất bại và lặp lại để tìm ra giải pháp tối ưu mà không tạo ra “khoản nợ kỹ thuật” trong quá trình đó. Những gì có vẻ khả thi trên bảng vẽ có thể thất bại ngay trong bài kiểm thử đầu tiên, và bài học rút ra từ đó có thể được áp dụng cho phiên bản vault tiếp theo. Việc có khả năng thích ứng linh hoạt với nhu cầu kinh doanh giúp tăng mức độ tin cậy vào giải pháp cũng như quy trình khôi phục. Những gì được đưa vào vault không chỉ là dữ liệu, mà còn cần có đóng góp từ các chủ sở hữu ứng dụng và các đơn vị kinh doanh.</p>
-<hr>
-<h2 id="4-làm-thế-nào-để-quản-lý-vault">4. Làm thế nào để quản lý vault?</h2>
-<p>Vault của bạn cần được tách khỏi mặt phẳng vận hành (operational plane) để bất kỳ sự cố mạng nào lan rộng trong môi trường production đều bị chặn lại ngay tại ranh giới của vault. Nếu không có mức độ tách biệt này, vault cũng có thể bị xâm phạm trong sự cố mạng.</p>
-<p>Các giải pháp air-gapped truyền thống thường bao gồm cách ly vật lý, chẳng hạn như rút dây kết nối hoặc tháo phương tiện lưu trữ, tạo ra khoảng trống thực sự (“air gap”) giữa cơ chế bảo vệ và môi trường vận hành.<br>
-Vậy làm thế nào để chuyển khái niệm cách ly này lên môi trường cloud và vault?<br>
-Việc tái tạo các biện pháp bảo mật tương đương trên đám mây đòi hỏi:</p>
+	<p><a href="https://aws.amazon.com/blogs/training-and-certification/">AWS Training and Certification Blog</a></p>
+<h2 id="từ-người-hâm-mộ-thống-kê-đến-nhà-tiên-phong-phân-tích-nfl-hành-trình-của-mike-band"><strong>Từ người hâm mộ thống kê đến nhà tiên phong phân tích NFL: hành trình của Mike Band</strong></h2>
+<p><em>viết bởi Priya Ponnuswamy vào ngày 04 tháng 09 năm 2025 trong các chuyên mục</em> <a href="https://aws.amazon.com/blogs/training-and-certification/category/artificial-intelligence/amazon-machine-learning/">Amazon Machine Learning</a>, <a href="https://aws.amazon.com/blogs/training-and-certification/category/analytics/">Analytics</a>, <a href="https://aws.amazon.com/blogs/training-and-certification/category/artificial-intelligence/">Artificial Intelligence</a>, <a href="https://aws.amazon.com/blogs/training-and-certification/category/aws-training-and-certification/">AWS Training and Certification</a>, <a href="https://aws.amazon.com/blogs/training-and-certification/category/post-types/best-practices/">Best Practices</a> | <a href="https://aws.amazon.com/blogs/training-and-certification/from-statistics-superfan-to-nfl-analytics-pioneer-mike-bands-journey/">Permalink</a> <a href="https://aws.amazon.com/blogs/training-and-certification/from-statistics-superfan-to-nfl-analytics-pioneer-mike-bands-journey/"> | Share</a></p>
+<p>Bạn có bao giờ tự hỏi làm sao đam mê thống kê thể thao từ nhỏ có thể chuyển hoá thành một sự nghiệp phân tích đột phá trong <strong>NFL</strong> (Giải Bóng bầu dục Quốc gia Hoa Kỳ)? Hãy gặp Mike Band, vị quản lý cấp cao về nghiên cứu và phân tích tại <a href="https://nextgenstats.nfl.com/">NFL Next Gen Stats</a>.chuyện của Band chứng minh rằng theo đuổi đam mê và sự tò mò có thể dẫn đến những sự nghiệp phi thường.</p>
+<p>Dù bạn là kỹ sư dữ liệu hay <a href="https://aws.amazon.com/ai/machine-learning/">machine learning (ML)</a> đang mong muốn, hay đã là nhà phân tích dữ liệu có kinh nghiệm, bài viết này mang đến cảm hứng và hướng dẫn để bắt đầu hoặc phát triển lộ trình nghề nghiệp của bạn.</p>
+<p><a href="https://www.youtube.com/watch?v=rQG9yBEX-Oc">From Data to Touchdowns: It All Adds Up | NFL Next Gen Stats &amp; AWS</a></p>
+<p><strong>Con đường đến giải đấu lớn</strong></p>
+<p>Khi còn nhỏ, Band đã say mê bóng bầu dục và thống kê. Anh củng cố đam mê ấy bằng cách học lấy bằng Cử nhân Khoa học (Bachelor of Science) ngành quản lý thể thao tại Đại học Florida, và sau đó lấy bằng Thạc sĩ (Master of Science) ngành phân tích tại Đại học Chicago.</p>
+<p>Ngoài việc đạt được bằng cấp học thuật, hành trình của Band đưa anh từ môi trường đại học đến chuyên nghiệp. Anh từng làm trợ lý tuyển sinh tại chương trình bóng bầu dục của University of Florida và làm trợ lý tuyển trạch (scouting assistant) tại Minnesota Vikings trước khi gia nhập đội ngũ Next Gen Stats của NFL — một công việc mơ ước đối với người hâm mộ thống kê bóng bầu dục! Nhưng công việc này không chỉ là phân tích con số — nó là cách thức cách mạng hóa cách chúng ta hiểu về bóng bầu dục.</p>
+<p><strong>Tạo làn sóng tại Next Gen Stats</strong></p>
+<p>Trong vai trò quản lý cấp cao về nghiên cứu và phân tích, Band đã giúp phát triển các mô hình AI tiên tiến đang thay đổi cách chúng ta phân tích bóng bầu dục. Là nền tảng theo dõi cầu thủ và quả bóng độc quyền của NFL, Next Gen Stats được sử dụng bởi ban tổ chức giải đấu, đài truyền hình, đối tác truyền thông, và cả 32 đội — bao gồm cả huấn luyện viên, tuyển trạch viên và cầu thủ.</p>
+<p>Khi làm việc cùng <a href="https://aws.amazon.com/">Amazon Web Services (AWS)</a>, Band đã đẩy giới hạn của những điều có thể với phân tích bóng bầu dục, giúp chuyển dữ liệu thô thành những thông tin có thể hành động được. Còn nhớ <a href="https://aws.amazon.com/blogs/media/a-new-take-on-tackling-nfl-next-gen-stats-and-aws-bring-data-to-the-gridiron/">tackle probability model</a> (gồm xác suất các tình huống tắc bóng) bạn thường thấy trong trận đấu? Band và nhóm của anh đóng một phần trong việc xây dựng mô hình đó, sử dụng khả năng ML của AWS để biến dữ liệu theo dõi thành các thống kê nâng cao nhằm đặt hành động trên sân vào bối cảnh phù hợp.</p>
+<p><strong>Lời khuyên cho thế hệ tiếp theo</strong></p>
+<p>Lời khuyên của Band cho những ai muốn theo đuổi phân tích thể thao? Đừng chờ đến khi được ai cho phép để theo đuổi đam mê của bạn. Anh nhấn mạnh tầm quan trọng của việc chủ động và để sự tò mò dẫn lối. “Cơ hội tốt nhất đến với những người tạo ra chúng,” Band nói.</p>
+<p>Dưới đây là một số nguyên tắc Band đã theo trong sự nghiệp:</p>
 <ul>
-<li><strong>Vùng truy nhập:</strong> Các khu vực, dịch vụ và chức năng chỉ tồn tại tạm thời và chỉ khả dụng trong thời gian được cấp quyền truy cập.</li>
-<li><strong>Xác thực đa yếu tố:</strong> Sử dụng thiết bị xác thực vật lý (physical tokens), chỉ có nhân sự được ủy quyền mới được phép truy cập.</li>
-<li><strong>Zero trust:</strong> Áp dụng xác thực ở mọi bước, không giả định bất kỳ thành phần nào là đáng tin cậy mặc định.</li>
-<li><strong>AWS Identity and Access Management (IAM):</strong> Thiết lập vai trò và quyền hạn giới hạn nghiêm ngặt, đảm bảo nguyên tắc phân quyền tối thiểu (least privilege).</li>
-<li><strong>Quản lý thay đổi:</strong> Chỉ cho phép truy cập vào token và tài khoản thông qua quy trình phê duyệt chính thức.</li>
+<li>
+<p>Luôn đói khát kiến thức, ngay cả ngoài giờ làm việc.</p>
+</li>
+<li>
+<p>Cập nhật công nghệ mới nổi, đặc biệt là AI.</p>
+</li>
+<li>
+<p>Không chỉ dừng ở việc tạo ra insight (thấu hiểu) mà còn chú trọng cách truyền đạt insight đó.</p>
+</li>
+<li>
+<p>Tìm kiếm làn sóng tiếp theo trong lĩnh vực của bạn — và nắm lấy nó.</p>
+</li>
+<li>
+<p>Biến đam mê thành chuyên môn thông qua học tập liên tục.</p>
+</li>
 </ul>
-<p><img src="../../../images/3-BlogsTranslated/1.hinh4.png" alt="Hình 4: Làm thế nào để quản lý vault? – Cách ly có chủ đích nhưng vẫn duy trì khả năng quan sát."></p>
-<p>Hình 4: Làm thế nào để quản lý vault? – Cách ly có chủ đích nhưng vẫn duy trì khả năng quan sát.</p>
-<hr>
-<h2 id="5-làm-thế-nào-để-lập-kế-hoạch-cho-khâu-hậu-cần-và-nhà-cung-cấp-dịch-vụ">5. Làm thế nào để lập kế hoạch cho khâu hậu cần và nhà cung cấp dịch vụ?</h2>
-<p>Các giải pháp vật lý thường bị bỏ qua khi xem xét cách ứng phó với một sự cố mạng. Khi tập trung vào các dịch vụ cốt lõi, ứng dụng và hạ tầng nền tảng, chúng ta thường không chú ý đến các phụ thuộc vật lý bên ngoài, vốn cũng đóng vai trò quan trọng trong quá trình khôi phục.</p>
-<p>Ví dụ:</p>
-<ul>
-<li><strong>Truy cập mạng nội bộ và bên ngoài:</strong> Không cần đến một thảm họa lớn để gây chú ý - mất kết nối mạng gây gián đoạn dịch vụ cũng đủ để trở thành vấn đề nghiêm trọng.</li>
-<li><strong>Kho lưu trữ phần mềm:</strong> Việc phân phối phần mềm tự động có nghĩa là bạn vẫn nên duy trì phương tiện lưu trữ vật lý, chẳng hạn như USB, được cất giữ sẵn để truy cập mà không phụ thuộc vào hạ tầng số.</li>
-<li><strong>Chuỗi cung ứng:</strong> Khi thiết bị vật lý bị hư hỏng hoàn toàn, cần có kế hoạch và quy trình rõ ràng để vận chuyển và cung cấp phần cứng đến đúng nơi, với số lượng cần thiết.</li>
-<li><strong>Hậu cần vật lý:</strong> Nếu một sự cố quy mô lớn đòi hỏi phản ứng tương xứng, vậy làm thế nào để bố trí nhân sự, thiết bị và không gian làm việc một cách kịp thời?</li>
-</ul>
-<p><img src="../../../images/3-BlogsTranslated/1.hinh5.png" alt="Hình 5: Hậu cần và nhà cung cấp dịch vụ – Mở rộng kế hoạch để bao gồm cả các phụ thuộc bên ngoài."></p>
-<p>Hình 5: Hậu cần và nhà cung cấp dịch vụ – Mở rộng kế hoạch để bao gồm cả các phụ thuộc bên ngoài.</p>
-<p>Mức độ tinh vi của một sự cố mạng có thể nằm ở việc gây ra nhiều lỗi cùng lúc, mà nếu xét riêng lẻ trong hoạt động kinh doanh thông thường thì chỉ có tác động nhỏ và được dự đoán trước. Tuy nhiên, khi những lỗi này xảy ra đồng thời trên diện rộng, chúng có thể tạo ra hiệu ứng cộng dồn, khiến quá trình khắc phục trở nên phức tạp hơn và bị trì hoãn.</p>
-<hr>
-<h2 id="6-ai-là-người-chịu-trách-nhiệm-cho-quy-trình-vaulting">6. Ai là người chịu trách nhiệm cho quy trình vaulting?</h2>
-<p>Con người sẽ là những người chịu trách nhiệm quản lý và vận hành quy trình cyber vaulting, đưa ra các best practices, và trực tiếp tham gia tuyến đầu khi cần thực hiện khôi phục. Việc lựa chọn đội ngũ chịu trách nhiệm là yếu tố then chốt, nhưng không phải lúc nào cũng đơn giản.</p>
-<p>Các nguyên tắc của vault được xây dựng dựa trên thực tế rằng nó bao gồm nhiều khía cạnh khác nhau như bảo vệ, lập kế hoạch và quy trình, và vì vậy cần có sự đóng góp từ nhiều bên liên quan, chứ không thể chỉ đến từ một nhóm duy nhất.</p>
-<p>Các bên liên quan trong doanh nghiệp (business stakeholders) — chứ không phải nhóm backup — nên điều phối thứ tự ưu tiên khôi phục, dựa trên hiểu biết về các phụ thuộc hệ thống, yêu cầu tuân thủ và tác động đến hoạt động kinh doanh. Việc giao tiếp rõ ràng giữa nhóm kỹ thuật và nhóm kinh doanh là yếu tố thiết yếu để xây dựng kế hoạch khôi phục sau sự cố mạng hiệu quả.</p>
-<p><img src="../../../images/3-BlogsTranslated/1.hinh6.png" alt="Hình 6: Con người và quy trình – Cân bằng hai yếu tố này là nền tảng cho các thực hành tốt."></p>
-<p>Hình 6: Con người và quy trình – Cân bằng hai yếu tố này là nền tảng cho các thực hành tốt.</p>
-<p>Kết quả của sự hợp tác đa chức năng này là các kế hoạch khôi phục mà doanh nghiệp của bạn phải áp dụng và tuân thủ. Tuy nhiên, điều này đôi khi vô tình tạo ra những kịch bản khôi phục kém hiệu quả, do các quy trình quá rườm rà có thể dẫn đến thực hành sai lệch.</p>
-<p>Những thủ tục phức tạp, thiếu tính linh hoạt, cùng với xu hướng con người chọn con đường ít cản trở nhất, có thể khiến kế hoạch khôi phục dù tốt đến đâu cũng không được thực thi đúng cách. Mặc dù điều này không ảnh hưởng ngay lập tức đến bảo mật hoặc quy trình khôi phục, nhưng thời điểm tồi tệ nhất để phát hiện rằng các nguyên tắc của vault chưa được áp dụng chính là khi bạn cần đến chúng.</p>
-<p>Để đảm bảo khôi phục hiệu quả sau sự cố mạng, tổ chức của bạn cần tích hợp liền mạch các best practices vào hoạt động hằng ngày. Việc tích hợp này đòi hỏi phải duy trì sự cân bằng tinh tế giữa yêu cầu khôi phục mạnh mẽ và các quy trình thực tiễn, bền vững, để các nhóm có thể tuân thủ nhất quán mà không làm ảnh hưởng đến bảo mật hay hiệu suất vận hành.</p>
-<hr>
-<h2 id="7-tại-sao-cần-có-sự-bảo-trợ">7. Tại sao cần có sự bảo trợ?</h2>
-<p>Không thể phủ nhận rằng bất kỳ công việc bổ sung nào trong tổ chức cũng sẽ tăng thêm chi phí và nỗ lực, đồng thời làm phân tán thời gian và nguồn lực khỏi các hoạt động phát triển kinh doanh khác. Không có Giám đốc tài chính (CFO) nào lại không đặt câu hỏi về việc tại sao một giải pháp công nghệ lại tiêu tốn thời gian, tiền bạc và công sức mà không tạo ra doanh thu.</p>
-<p>Vault không phải là một phần hoạt động chủ chốt trong doanh nghiệp của bạn. Vì vậy, điều quan trọng là giá trị nội tại và mục đích sử dụng của nó phải được thấu hiểu rõ ràng. Điều này chỉ có thể đạt được khi có sự bảo trợ và định hướng từ cấp lãnh đạo cao nhất — tức là sự cam kết “từ trên xuống” (top-down) của ban điều hành.</p>
-<p><img src="../../../images/3-BlogsTranslated/1.hinh7.png" alt="Hình 7: Sự bảo trợ – Cách tiếp cận từ trên xuống định hướng cho toàn bộ doanh nghiệp."></p>
-<p>Hình 7: Sự bảo trợ – Cách tiếp cận từ trên xuống định hướng cho toàn bộ doanh nghiệp.</p>
-<hr>
-<h2 id="bắt-đầu-với-aws">Bắt đầu với AWS</h2>
-<p>AWS cung cấp nhiều lớp phòng thủ chống lại các sự kiện ransomware. Để bảo vệ dữ liệu ngay lập tức trên nhiều dịch vụ dữ liệu AWS, AWS Backup cung cấp khả năng quản lý sao lưu tập trung với các bản sao lưu bất biến và khả năng “cách ly logic”, giúp ngăn chặn việc sửa đổi trái phép và cho phép khôi phục nhanh chóng. Amazon S3 với versioning và Object Lock, cùng với Amazon FSx for NetApp ONTAP, tạo ra môi trường lưu trữ chống giả mạo cho dữ liệu quan trọng.</p>
-<p>Về mặt phát hiện, Amazon GuardDuty giám sát hoạt động đáng ngờ, trong khi AWS Security Hub cung cấp cái nhìn tổng thể về tình hình bảo mật. Amazon Macie xác định dữ liệu nhạy cảm có thể bị nhắm mục tiêu, trong khi AWS Shield và AWS WAF bảo vệ trước các cuộc tấn công DDoS và khai thác web. AWS Network Firewall lọc lưu lượng độc hại ở cấp mạng. Các đối tác như elastio tích hợp với AWS Backup giúp tổ chức xác minh tính toàn vẹn của dữ liệu gần như theo thời gian thực, từ đó cho phép khôi phục “sạch” với thời gian ngừng hoạt động và mất dữ liệu tối thiểu.</p>
-<p>Về bảo vệ danh tính, IAM triển khai nguyên tắc “quyền truy cập tối thiểu”, trong khi AWS Organizations cho phép quản lý chính sách bảo mật tập trung trên nhiều tài khoản. AWS Config và AWS CloudTrail cung cấp khả năng theo dõi thay đổi cấu hình và hoạt động API, điều rất cần thiết cho phân tích pháp y sau sự cố.</p>
-<hr>
-<h2 id="kết-luận">Kết luận</h2>
-<p>Các sự kiện mạng, đặc biệt là ransomware, đang gia tăng hàng năm. Sự chuyển dịch từ việc bảo vệ trước các sự cố ngẫu nhiên sang đối phó với các cuộc tấn công có chủ đích đòi hỏi doanh nghiệp phải phản ứng nhanh để thu hẹp “cửa sổ rủi ro” – nơi mà một sự cố nghiêm trọng có thể khiến dịch vụ tê liệt, thậm chí làm doanh nghiệp ngừng hoạt động.</p>
-<p>Giải pháp công nghệ chỉ là một phần của phương trình. Việc lên kế hoạch phản ứng trước gián đoạn có chủ đích là yếu tố then chốt giúp loại bỏ những giả định sai lệch trong vận hành hằng ngày. Một sự cố mạng không phải là hoạt động thường nhật, và vì vậy cần được chuẩn bị và lập kế hoạch phù hợp để những quyết định quan trọng không bị đưa ra trong tình huống khẩn cấp.</p>
-<p>Tăng cường khả năng phục hồi mạng (cyber resilience) đòi hỏi một chiến lược toàn diện ở cấp tổ chức. Hãy bắt đầu bằng cách xác định thế nào là khôi phục thành công đối với hoạt động kinh doanh của bạn, sau đó xây dựng và chuẩn bị cho các kịch bản tồi tệ nhất thông qua kế hoạch chi tiết. Liên tục lặp lại, kiểm tra và xác thực các quy trình khôi phục để đảm bảo chúng thực sự hoạt động khi cần thiết.</p>
-<p>Quan trọng hơn hết, khả năng phục hồi mạng vượt xa phạm vi của bộ phận CNTT — đây là thách thức mang tính toàn doanh nghiệp. Mọi bộ phận, từ vận hành, tài chính đến lãnh đạo và nhân viên tuyến đầu, đều đóng vai trò quan trọng trong việc xây dựng và thực thi khả năng phục hồi khi sự cố xảy ra. Thành công phụ thuộc vào việc biến khả năng phục hồi mạng trở thành trách nhiệm chung của toàn tổ chức, từ CEO đến quản trị viên hệ thống.</p>
-<hr>
-<h2 id="tác-giả">Tác giả</h2>
-<p><strong>Tom Tasker</strong><br>
-Tom là một Storage Solution Architect phụ trách Global Financial Services tại Amazon Web Services. Anh làm việc với các công ty dịch vụ tài chính lớn và có tầm ảnh hưởng nhất thế giới, các cơ quan quản lý và các đối tác, nhằm thúc đẩy các giải pháp được tích hợp và vận hành trên nền tảng AWS storage.</p>
-<p><strong>Danny Johnston</strong><br>
-Danny là người đứng đầu Global Financial Services Storage Business Development Team tại Amazon Web Services. Anh là một chuyên gia phát triển kinh doanh dày dạn kinh nghiệm, chuyên về các giải pháp enterprise storage, thúc đẩy các quan hệ đối tác chiến lược với khách hàng và cơ quan quản lý. Anh đam mê hỗ trợ các tổ chức dịch vụ tài chính tối ưu hóa hạ tầng dữ liệu và đẩy nhanh các sáng kiến chuyển đổi số.</p>
+<p>Hãy tham gia hàng ngũ các chuyên gia kỹ thuật xây dựng những sự nghiệp bền vững và đáng giá. <a href="https://skillbuilder.aws/?trk=ccd9a523-3c68-426c-99b0-7ecc7fd711c8&amp;sc_channel=el">AWS Skill Builder</a>, trung tâm học tập trực tuyến của AWS, cung cấp cho bạn một điểm khởi đầu để bước vào thế giới hiệu suất cao này:</p>
+<ol>
+<li>
+<p>Bắt đầu hành trình của bạn với một tài khoản Skill Builder miễn phí.</p>
+</li>
+<li>
+<p>Chọn các lộ trình học theo vai trò như  <a href="https://skillbuilder.aws/category/role/data-engineer/?trk=ccd9a523-3c68-426c-99b0-7ecc7fd711c8&amp;sc_channel=el">Data Engineer</a> hoặc <a href="https://skillbuilder.aws/category/role/machine-learning-engineer/?trk=ccd9a523-3c68-426c-99b0-7ecc7fd711c8&amp;sc_channel=el">Machine Learning Engineer</a>.</p>
+</li>
+<li>
+<p>Tận dụng các khóa học kỹ thuật số để xây dựng nền tảng kiến thức.</p>
+</li>
+<li>
+<p>Phát triển kỹ năng đám mây thực tiễn qua <a href="https://skillbuilder.aws/category/style/game-based-learning/?trk=ccd9a523-3c68-426c-99b0-7ecc7fd711c8&amp;sc_channel=el">AWS Cloud Quest</a> (đào tạo theo dạng trò chơi) và <a href="https://skillbuilder.aws/category/style/immersive-solutions-building/?trk=ccd9a523-3c68-426c-99b0-7ecc7fd711c8&amp;sc_channel=el">AWS SimuLearn</a>, cung cấp các bài tập xây dựng giải pháp được hỗ trợ bởi AI.</p>
+</li>
+<li>
+<p>Xác thực kỹ năng, kiến thức và chuyên môn của bạn bằng <a href="https://aws.amazon.com/certification/?trk=ccd9a523-3c68-426c-99b0-7ecc7fd711c8&amp;sc_channel=el">AWS Certifications</a>.</p>
+</li>
+</ol>
+<p>Thành công không chỉ đến từ việc sở hữu các bằng cấp đúng hay kỹ năng kỹ thuật tốt — mà còn bằng việc giữ cho sự tò mò như của trẻ thơ và động lực học hỏi không ngừng. Dù bạn đang mơ ước sự nghiệp trong phân tích thể thao hay bất kỳ lĩnh vực nào khác, hãy học theo cuốn “playbook” của Band: giữ sự tò mò, chủ động, và đừng bao giờ ngừng học. Rốt cuộc, dự án đam mê hôm nay có thể là đột phá nghề nghiệp của ngày mai.</p>
+<p>Bắt đầu hành trình học tập của bạn ngay hôm nay!</p>
 
 
 
@@ -1680,19 +1628,19 @@ Danny là người đứng đầu Global Financial Services Storage Business Dev
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1765276671"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1765276671"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1765276671"></script>
-    <script src="../../../js/jquery.sticky.js?1765276671"></script>
-    <script src="../../../js/featherlight.min.js?1765276671"></script>
-    <script src="../../../js/highlight.pack.js?1765276671"></script>
+    <script src="../../../js/clipboard.min.js?1765288544"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1765288544"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1765288544"></script>
+    <script src="../../../js/jquery.sticky.js?1765288544"></script>
+    <script src="../../../js/featherlight.min.js?1765288544"></script>
+    <script src="../../../js/highlight.pack.js?1765288544"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1765276671"></script>
-    <script src="../../../js/learn.js?1765276671"></script>
-    <script src="../../../js/hugo-learn.js?1765276671"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1765288544"></script>
+    <script src="../../../js/learn.js?1765288544"></script>
+    <script src="../../../js/hugo-learn.js?1765288544"></script>
 
-    <link href="../../../mermaid/mermaid.css?1765276671" rel="stylesheet" />
-    <script src="../../../mermaid/mermaid.js?1765276671"></script>
+    <link href="../../../mermaid/mermaid.css?1765288544" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1765288544"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

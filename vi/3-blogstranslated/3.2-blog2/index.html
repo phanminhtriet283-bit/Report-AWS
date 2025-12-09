@@ -15,21 +15,21 @@
     <title>Blog 2 :: Báo cáo thực tập</title>
 
     
-    <link href="../../../css/nucleus.css?1765276671" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1765276671" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1765276671" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1765276671" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1765276671" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1765276671" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1765276671" rel="stylesheet">
-    <link href="../../../css/theme.css?1765276671" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1765276671" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1765288544" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1765288544" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1765288544" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1765288544" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1765288544" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1765288544" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1765288544" rel="stylesheet">
+    <link href="../../../css/theme.css?1765288544" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1765288544" rel="stylesheet">
     
-    <link href="../../../css/theme-workshop.css?1765276671" rel="stylesheet">
+    <link href="../../../css/theme-workshop.css?1765288544" rel="stylesheet">
     
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1765276671"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1765288544"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1765276671"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1765276671"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1765288544"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1765288544"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/phanminhtriet283-bit.github.io\/Report-AWS\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1765276671"></script>
+<script type="text/javascript" src="../../../js/search.js?1765288544"></script>
  
   </div>
 
@@ -914,19 +914,7 @@
                     <div class="progress">
   <div class="wrapper"><nav id="TableOfContents">
   <ul>
-    <li><a href="#tổng-quan-về-amazon-vpc-route-server">Tổng quan về Amazon VPC Route Server</a></li>
-    <li><a href="#cách-định-tuyến-động-hoạt-động-trong-amazon-vpc">Cách định tuyến động hoạt động trong Amazon VPC</a></li>
-    <li><a href="#khi-nào-nên-sử-dụng-định-tuyến-động">Khi nào nên sử dụng định tuyến động?</a>
-      <ul>
-        <li><a href="#-chuyển-đổi-dự-phòng-tự-động-failover-automation">✔ Chuyển đổi dự phòng tự động (Failover Automation)</a></li>
-        <li><a href="#-kiến-trúc-floating-ip-cho-high-availability">✔ Kiến trúc Floating IP cho High Availability</a></li>
-        <li><a href="#-kiểm-tra-lưu-lượng-qua-firewall">✔ Kiểm tra lưu lượng qua firewall</a></li>
-        <li><a href="#-phát-hiện-sự-cố-cực-nhanh-bằng-bfd">✔ Phát hiện sự cố cực nhanh bằng BFD</a></li>
-        <li><a href="#-cập-nhật-bảng-định-tuyến-vpc-tự-động">✔ Cập nhật bảng định tuyến VPC tự động</a></li>
-      </ul>
-    </li>
-    <li><a href="#route-consistency--route-advertisement">Route Consistency &amp; Route Advertisement</a></li>
-    <li><a href="#bfd-và-vai-trò-trong-quá-trình-khôi-phục">BFD và vai trò trong quá trình khôi phục</a></li>
+    <li><a href="#trợ-lý-ai-agentic-cho-sap-với-aws-generative-ai"><strong>Trợ lý AI Agentic cho SAP với AWS Generative AI</strong></a></li>
   </ul>
 </nav></div>
 </div>
@@ -951,116 +939,483 @@
 
 
 
-	<h1 id="định-tuyến-động-bằng-amazon-vpc-route-server">Định tuyến động bằng Amazon VPC Route Server</h1>
-<p>AWS cung cấp dịch vụ được quản lý <strong>Amazon VPC Route Server</strong> để giúp khách hàng thiết lập và vận hành giao thức định tuyến động Border Gateway Protocol (BGP) trong Amazon Virtual Private Cloud (Amazon VPC).</p>
-<p>Trước đây, để có định tuyến động trong môi trường VPC, bạn cần chạy VPC router dựa trên phần mềm của riêng mình trên Amazon EC2. Giờ đây, với Amazon VPC Route Server, bạn có thể:</p>
+	<p><a href="https://aws.amazon.com/blogs/awsforsap/"><strong>AWS for SAP</strong></a></p>
+<h2 id="trợ-lý-ai-agentic-cho-sap-với-aws-generative-ai"><strong>Trợ lý AI Agentic cho SAP với AWS Generative AI</strong></h2>
+<p>Viết bởi Sourav Sadhu vào ngày 04 tháng 9 năm 2025 trong <a href="https://aws.amazon.com/blogs/awsforsap/category/artificial-intelligence/amazon-machine-learning/amazon-bedrock/">Amazon Bedrock</a>, <a href="https://aws.amazon.com/blogs/awsforsap/category/artificial-intelligence/amazon-machine-learning/amazon-bedrock/amazon-bedrock-agents/">Amazon Bedrock Agents</a>, <a href="https://aws.amazon.com/blogs/awsforsap/category/artificial-intelligence/amazon-machine-learning/amazon-bedrock/amazon-bedrock-knowledge-bases/">Amazon Bedrock Knowledge Bases</a>, <a href="https://aws.amazon.com/blogs/awsforsap/category/sap/">SAP on AWS</a>, <a href="https://aws.amazon.com/blogs/awsforsap/category/post-types/technical-how-to/">Technical How-to</a> <a href="https://aws.amazon.com/blogs/awsforsap/agentic-ai-assistant-for-sap-with-aws-genai/">Permalink</a>  <a href="https://aws.amazon.com/blogs/awsforsap/agentic-ai-assistant-for-sap-with-aws-genai/">Share</a></p>
+<p><strong>Giới thiệu</strong></p>
+<p>Hệ thống SAP là xương sống của nhiều doanh nghiệp, quản lý các quy trình kinh doanh quan trọng và tạo ra khối lượng dữ liệu giá trị lớn. Các quy trình kinh doanh và dữ liệu quan trọng này thường mở rộng ra ngoài hệ thống SAP doanh nghiệp, yêu cầu khách hàng tương tác với các hệ thống bên ngoài. Khi các tổ chức tìm cách tận dụng dữ liệu này để có được những hiểu biết sâu sắc hơn và cải thiện việc ra quyết định, nhu cầu thay đổi cách khách hàng SAP tương tác với dữ liệu và hệ thống của họ ngày càng tăng.</p>
+<p>Khả năng xử lý ngôn ngữ tự nhiên (NLP) của trí tuệ nhân tạo tạo sinh (Generative AI) cung cấp cho người dùng SAP một công cụ mạnh mẽ để tương tác với các hệ thống ERP phức tạp bằng các câu hỏi ngôn ngữ tự nhiên, loại bỏ nhu cầu về kiến thức kỹ thuật chuyên sâu hoặc các truy vấn SQL phức tạp. Điều này dân chủ hóa việc truy cập dữ liệu trong toàn tổ chức, cho phép người dùng doanh nghiệp đặt câu hỏi, tạo báo cáo và thu thập thông tin chi tiết theo thời gian thực thông qua các giao diện hội thoại.</p>
+<p>Việc tích hợp Generative AI với hệ thống SAP cho phép các tổ chức thu hẹp khoảng cách giữa dữ liệu ERP có cấu trúc và thông tin không có cấu trúc từ các nguồn SAP và không phải SAP, mang lại cái nhìn toàn diện hơn về bối cảnh kinh doanh của họ. Sự tích hợp này có thể dẫn đến dự báo chính xác hơn, trải nghiệm khách hàng được cá nhân hóa và ra quyết định dựa trên dữ liệu bao quát toàn bộ hệ sinh thái doanh nghiệp.</p>
+<p>AWS và SAP trao quyền cho khách hàng ở mọi giai đoạn của hành trình áp dụng Generative AI với bộ dịch vụ AI tạo sinh tiên tiến, cơ sở hạ tầng mạnh mẽ và nguồn lực triển khai phong phú. Những dịch vụ này có thể tích hợp với hệ thống SAP và bổ sung cho hệ sinh thái dịch vụ đám mây rộng lớn của AWS và SAP.</p>
+<p>Trong bài blog này (Phần 1 của chuỗi 2 phần), tôi sẽ mô tả và minh họa cách bạn có thể tận dụng Amazon Bedrock và các dịch vụ AWS khác để thu thập thông tin chi tiết từ các nguồn dữ liệu SAP và không phải SAP bằng ngôn ngữ tự nhiên của con người trong một giao diện thống nhất thông qua MS Teams, Slack và giao diện người dùng Streamlit.</p>
+<p>Trong Phần 2 của chuỗi bài blog này, tôi sẽ mô tả và minh họa cách bạn có thể tận dụng các dịch vụ SAP BTP [SAP Build Apps, SAP Generative AI Hub] để thu thập thông tin chi tiết từ các hệ thống SAP và không phải SAP bằng ngôn ngữ tự nhiên của con người trong một giao diện thống nhất với giao diện người dùng SAP Build Apps.</p>
+<p><strong>Tổng quan</strong></p>
+<p>Tôi sẽ bắt đầu bằng cách phát triển logic kinh doanh cần thiết để trích xuất dữ liệu từ hệ thống SAP. Tôi sẽ tạo hai hàm AWS Lambda để thực thi logic kinh doanh, được hỗ trợ bởi các dịch vụ AWS khác nhau bao gồm Bedrock Knowledge Bases và AWS Secrets Manager. Sau đó, tôi sẽ tập trung vào việc tạo logic kinh doanh để xử lý dữ liệu từ một nguồn dữ liệu không phải SAP bổ sung, triển khai một hàm Lambda khác được thiết kế đặc biệt để trích xuất dữ liệu từ Amazon DynamoDB, nơi chứa thông tin logistics. Để nâng cao khả năng của hệ thống, tôi sẽ thiết lập một cơ sở tri thức sẽ đóng vai trò là nguồn dữ liệu thứ ba, hỗ trợ các truy vấn chung của người dùng. Tiếp theo, tôi sẽ triển khai một Amazon Bedrock Agent chịu trách nhiệm điều phối luồng giữa các nguồn dữ liệu khác nhau dựa trên truy vấn của người dùng. Ở giai đoạn cuối, tôi sẽ tạo một giao diện người dùng bằng Streamlit, đồng thời cung cấp một tùy chọn tích hợp thay thế với MS Teams và Slack để tăng khả năng truy cập.</p>
+<p><img src="../../../images/3-BlogsTranslated/blog1.hinh1.png" alt=""></p>
+<p><strong>Hình 1. Kiến trúc cấp cao</strong></p>
+<p><strong>Hướng dẫn thực hiện</strong></p>
+<p>Tôi đã cấu trúc giải pháp thành 5 bước. Hãy cùng tôi đi qua từng bước:</p>
+<p><strong>Bước 1 – Tạo logic kinh doanh để lấy dữ liệu từ hệ thống SAP</strong><br>
+<strong>Bước 2 – Tạo logic kinh doanh để lấy dữ liệu từ hệ thống không phải SAP</strong><br>
+<strong>Bước 3 – Tạo cơ sở tri thức Bedrock cho các truy vấn chung</strong><br>
+<strong>Bước 4 – Tạo Bedrock Agents để điều phối giữa các nguồn dữ liệu khác nhau</strong><br>
+<strong>Bước 5 – Tạo giao diện người dùng với Microsoft Teams, Slack và Streamlit</strong></p>
+<p><strong>Điều kiện tiên quyết</strong></p>
+<p>Một tài khoản AWS với quyền IAM phù hợp để làm việc với Amazon S3, AWS Lambda, Amazon Bedrock Agents, Amazon Bedrock Knowledge Bases, Amazon Bedrock LLM (Claude), AWS Secrets Manager, Amazon DynamoDB. Nếu bạn chưa quen với các dịch vụ này, nên tìm hiểu trước khi tiếp tục.</p>
 <ul>
-<li>Thiết lập phiên BGP động giữa Amazon VPC Route Server và các thiết bị mạng ảo.</li>
-<li>Trao đổi thông tin định tuyến dựa trên thay đổi của lưu lượng.</li>
-<li>Cập nhật tự động bảng định tuyến VPC mà không cần thủ công.</li>
-<li>Phát hiện sự cố nhanh hơn bằng <strong>Bidirectional Forwarding Detection (BFD)</strong>.</li>
-<li>Thực hiện kiểm tra sâu lưu lượng qua firewall ở quy mô Multi-AZ.</li>
+<li>Một hệ thống SAP hỗ trợ dịch vụ SAP OData làm nguồn dữ liệu cho Đơn hàng Bán hàng SAP.</li>
+<li>Tôi đã sử dụng dịch vụ OData tiêu chuẩn, Dịch vụ Đơn hàng Bán hàng SAP: API_SALES_ORDER_SRV và Tập thực thể: A_SalesOrder cho bản demo này, tuy nhiên bạn có thể sử dụng bất kỳ dịch vụ OData nào tùy thuộc vào trường hợp sử dụng của bạn. Tôi đã công khai OData qua internet, nhưng tùy thuộc vào vị trí hệ thống SAP của bạn, bạn có thể chọn không công khai qua internet. Tuy nhiên, chúng tôi khuyến nghị thiết lập kết nối riêng tư để có hiệu suất và bảo mật tốt hơn. Để biết thêm thông tin, xem <em>Cách kích hoạt dịch vụ OData trong SAP S/4HANA</em> và <em>Kết nối với RISE từ tài khoản AWS của bạn</em>.</li>
+<li>Tài khoản Slack cho tích hợp Slack và tài khoản MS Teams cho tích hợp MS Teams [tùy chọn].</li>
 </ul>
-<p>Trong blog này, chúng tôi trình bày chi tiết cách Amazon VPC Route Server hoạt động, các trường hợp sử dụng và cách bạn có thể bắt đầu với định tuyến động trong Amazon VPC.</p>
-<hr>
-<h2 id="tổng-quan-về-amazon-vpc-route-server">Tổng quan về Amazon VPC Route Server</h2>
-<p>Khách hàng triển khai software appliance để xử lý lưu lượng thoại. Appliance yêu cầu định tuyến động và dữ liệu trạng thái định tuyến được cập nhật liên tục thông qua BGP.</p>
-<p>Software appliance yêu cầu:</p>
+<p><strong>Bước 1 – Tạo logic kinh doanh để lấy dữ liệu từ hệ thống SAP</strong></p>
+<p>I. Tôi sẽ bắt đầu bằng cách tạo bí mật trong AWS Secrets Manager để lưu trữ thông tin đăng nhập và chi tiết kết nối của hệ thống S4.</p>
+<p>Chọn loại bí mật là Loại bí mật khác và sau đó thêm các chi tiết dưới đây vào cặp Khóa/Giá trị. Đặt giá trị bí mật phù hợp với môi trường của bạn.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Khóa bí mật</th>
+          <th>Giá trị bí mật</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>S4_host_details</td>
+          <td>https://&lt;hostname&gt;:&lt;port&gt;</td>
+      </tr>
+      <tr>
+          <td>S4_username</td>
+          <td>xxxx</td>
+      </tr>
+      <tr>
+          <td>S4_password</td>
+          <td>xxxx</td>
+      </tr>
+  </tbody>
+</table>
+<p>Để biết thêm thông tin, xem <em>Tạo bí mật trong AWS Secrets Manager</em>.</p>
+<p>II. Là bước thứ hai, tôi sẽ tạo hai cơ sở tri thức Bedrock để bổ sung và hỗ trợ dữ liệu SAP khi cần thiết.</p>
 <ul>
-<li>Định tuyến động từ Route Server</li>
-<li>Phiên BGP hai chiều để phát hiện trạng thái mạng</li>
-<li>Chuyển đổi tuyến đường phù hợp</li>
+<li>Odata-Schema-knowledgebase: Tôi sẽ sử dụng cơ sở tri thức này để cung cấp chi tiết lược đồ cho LLM, để mô hình có đủ kiến thức về các thuộc tính cần sử dụng khi tạo URL OData dựa trên truy vấn của người dùng.</li>
+<li>SAP-external-knowledgebase: Tôi sẽ sử dụng cơ sở tri thức này để cung cấp chi tiết bổ sung cho dữ liệu không phải SAP.</li>
 </ul>
-<p><img src="../../../images/3-BlogsTranslated/2.hinh1.png" alt="Hình 1: Kiến trúc định tuyến động với Amazon VPC Route Server"></p>
-<p><strong>Hình 1: Kiến trúc định tuyến động với Amazon VPC Route Server</strong></p>
-<p>Luồng định tuyến động:</p>
-<ol>
-<li>Route Server thiết lập phiên BGP với thiết bị mạng.</li>
-<li>Thiết bị gửi tuyến đường về Route Server.</li>
-<li>Route Server cập nhật bảng định tuyến VPC.</li>
-<li>Route Server tạo phiên BFD đến thiết bị mạng.</li>
-<li>Thiết bị phản hồi bằng phiên BFD.</li>
-<li>Cả hai thực hiện phát hiện trạng thái để duy trì session BGP.</li>
-</ol>
-<hr>
-<h2 id="cách-định-tuyến-động-hoạt-động-trong-amazon-vpc">Cách định tuyến động hoạt động trong Amazon VPC</h2>
-<p><img src="../../../images/3-BlogsTranslated/2.hinh2.png" alt="Hình 2: Route từ Route Server vào bảng route VPC"></p>
-<p><strong>Hình 2: Route từ Route Server vào bảng route VPC</strong></p>
-<p>Quy trình:</p>
-<ol>
-<li>Thiết bị thiết lập phiên BGP với Route Server.</li>
-<li>Trao đổi route.</li>
-<li>Route Server cập nhật route table.</li>
-<li>Lưu lượng đi theo route mới.</li>
-</ol>
-<hr>
-<h2 id="khi-nào-nên-sử-dụng-định-tuyến-động">Khi nào nên sử dụng định tuyến động?</h2>
-<h3 id="-chuyển-đổi-dự-phòng-tự-động-failover-automation">✔ Chuyển đổi dự phòng tự động (Failover Automation)</h3>
-<p>Failover trong cloud đòi hỏi route phải thay đổi ngay khi instance, thiết bị hoặc AZ gặp lỗi.</p>
-<p><img src="../../../images/3-BlogsTranslated/2.hinh3.png" alt="Hình 3: Chuyển đổi dự phòng bằng dynamic routing"></p>
-<p><strong>Hình 3: Chuyển đổi dự phòng bằng dynamic routing</strong></p>
-<hr>
-<h3 id="-kiến-trúc-floating-ip-cho-high-availability">✔ Kiến trúc Floating IP cho High Availability</h3>
-<p>Floating IP cho phép một địa chỉ IP ổn định khi backend thay đổi.</p>
-<p><img src="../../../images/3-BlogsTranslated/2.hinh4.png" alt="Hình 4: Kiến trúc Floating IP uptime cao"></p>
-<p><strong>Hình 4: Kiến trúc Floating IP uptime cao</strong></p>
-<hr>
-<h3 id="-kiểm-tra-lưu-lượng-qua-firewall">✔ Kiểm tra lưu lượng qua firewall</h3>
-<p>Phổ biến trong:</p>
+<p>Tôi đã xem xét các đầu vào sau khi tạo hai cơ sở tri thức, giữ tất cả các cài đặt khác ở giá trị mặc định.</p>
 <ul>
-<li>DMZ</li>
-<li>kiểm duyệt outbound</li>
-<li>chặn truy cập trái phép</li>
-</ul>
-<p><img src="../../../images/3-BlogsTranslated/2.hinh5.png" alt="Hình 5: Firewall inspection trong nhiều AZ"></p>
-<p><strong>Hình 5: Firewall inspection trong nhiều AZ</strong></p>
-<hr>
-<h3 id="-phát-hiện-sự-cố-cực-nhanh-bằng-bfd">✔ Phát hiện sự cố cực nhanh bằng BFD</h3>
-<p>Trước đây failover mất 10–30 giây.<br>
-Với BFD → chỉ <strong>dưới 1 giây</strong>.</p>
-<p><img src="../../../images/3-BlogsTranslated/2.hinh6.png" alt="Hình 6: BFD phát hiện sự cố nhanh hơn"></p>
-<p><strong>Hình 6: BFD phát hiện sự cố nhanh hơn</strong></p>
-<hr>
-<h3 id="-cập-nhật-bảng-định-tuyến-vpc-tự-động">✔ Cập nhật bảng định tuyến VPC tự động</h3>
-<p>Không cần update thủ công.</p>
-<p><img src="../../../images/3-BlogsTranslated/2.hinh7.png" alt="Hình 7: Route cập nhật tự động"></p>
-<p><strong>Hình 7: Route cập nhật tự động</strong></p>
-<hr>
-<h2 id="route-consistency--route-advertisement">Route Consistency &amp; Route Advertisement</h2>
-<p><img src="../../../images/3-BlogsTranslated/2.hinh8.png" alt="Hình 8: Route Advertisement trong Route Server"></p>
-<p><strong>Hình 8: Route Advertisement trong Route Server</strong></p>
-<p>Route Server thực hiện:</p>
+<li>Cung cấp chi tiết cơ sở tri thức
 <ul>
-<li>Nhận route từ thiết bị mạng</li>
-<li>Xác thực route hợp lệ</li>
-<li>Đẩy vào route table</li>
-<li>Quản lý vòng đời route theo session BGP</li>
+<li>Tên cơ sở tri thức: Chọn tên cho mỗi cơ sở tri thức với mô tả thân thiện với người dùng. Tôi đã sử dụng Odata-Schema-knowledgebase và SAP-external-knowledgebase.</li>
+<li>Mô tả cơ sở tri thức: Cung cấp mô tả xác định duy nhất cơ sở tri thức của bạn.</li>
 </ul>
-<hr>
-<h2 id="bfd-và-vai-trò-trong-quá-trình-khôi-phục">BFD và vai trò trong quá trình khôi phục</h2>
-<p>BFD giúp:</p>
+</li>
+<li>Quyền IAM: Chọn Tạo và sử dụng vai trò dịch vụ mới.</li>
+<li>Cấu hình nguồn dữ liệu
 <ul>
-<li>Phát hiện link-down trong mili-giây</li>
-<li>Tăng tốc failover</li>
-<li>Phù hợp workload yêu cầu low latency</li>
+<li>Nguồn dữ liệu: Chọn Amazon S3.</li>
+<li>Tên nguồn dữ liệu: Chọn tên cho mỗi nguồn dữ liệu.</li>
+<li>S3 URI: Tạo hai bucket S3, một cho mỗi cơ sở tri thức. Tải tệp Sales_Order_Schema.json cho Odata-Schema-knowledgebase và Shipping_Policy.pdf cho SAP-external-knowledgebase từ kho GitHub lên các bucket S3 tương ứng và cung cấp URI S3.</li>
 </ul>
-<p><img src="../../../images/3-BlogsTranslated/2.hinh9.png" alt="Hình 9: BFD hỗ trợ failover"></p>
-<p><strong>Hình 9: BFD hỗ trợ failover</strong></p>
-<hr>
-<h1 id="kết-luận">Kết luận</h1>
-<p>Amazon VPC Route Server mang lại cách tiếp cận mạnh mẽ, linh hoạt và dễ vận hành cho dynamic routing:</p>
+</li>
+<li>Cấu hình lưu trữ và xử lý dữ liệu
 <ul>
-<li>BGP</li>
-<li>BFD</li>
-<li>Firewall inspection</li>
-<li>Floating IP</li>
-<li>Route advertisement tự động</li>
+<li>Mô hình nhúng: Amazon Titan Text Embeddings V2.</li>
+<li>Cơ sở dữ liệu vector: Phương pháp tạo vector là Tạo nhanh kho vector mới và kho vector là Amazon OpenSearch Serverless.</li>
 </ul>
-<p>→ Đây là giải pháp phù hợp cho các kiến trúc yêu cầu <strong>High Availability</strong> và <strong>Resilience</strong>.</p>
-<hr>
-<h1 id="tác-giả">Tác giả</h1>
-<p><strong>Rashid Mulji – Principal Solutions Architect, AWS</strong><br>
-<strong>Ryan Umstead – Senior Solutions Architect, AWS</strong></p>
+</li>
+</ul>
+<p>Để biết thêm thông tin, xem <em>Tạo cơ sở tri thức bằng cách kết nối với nguồn dữ liệu trong Amazon Bedrock Knowledge Bases</em>.</p>
+<p>Đây là giao diện cuối cùng của tôi<br>
+<img src="../../../images/3-BlogsTranslated/blog1.hinh2.png" alt=""></p>
+<p>III. Bây giờ, tôi sẽ tạo hai hàm Lambda để trích xuất dữ liệu từ hệ thống SAP dựa trên truy vấn của người dùng.</p>
+<ul>
+<li>SAP-Odata-URL-Generation: Hàm Lambda này thực thi logic kinh doanh để tạo URL OData dựa trên truy vấn của người dùng với sự hỗ trợ của LLM, được bổ sung bởi chi tiết lược đồ từ cơ sở tri thức và chi tiết máy chủ từ AWS Secrets Manager.</li>
+<li>SAP-Sales-Order-Query: Hàm Lambda này thực thi logic kinh doanh cốt lõi để truy xuất dữ liệu từ hệ thống SAP. Nó sử dụng URL OData do hàm SAP-Odata-URL-Generation cung cấp và truy cập an toàn thông tin đăng nhập hệ thống được lưu trữ trong AWS Secrets Manager. Hàm sau đó xử lý dữ liệu đã truy xuất, tận dụng LLM thông qua Bedrock, và cuối cùng trình bày thông tin có cấu trúc cho Bedrock Agent để sử dụng tiếp.</li>
+</ul>
+<p>Tôi đã xem xét các đầu vào dưới đây khi tạo các hàm, giữ tất cả các cài đặt khác ở giá trị mặc định.</p>
+<ul>
+<li>Chọn Tạo từ đầu.</li>
+<li>Tên hàm: Chọn tên cho mỗi hàm với mô tả thân thiện với người dùng. Tôi đã chọn SAP-Odata-URL-Generation và SAP-Sales-Order-Query.</li>
+<li>Môi trường chạy: Python 3.13.</li>
+<li>Kiến trúc: x86_64.</li>
+<li>Mã: Sao chép mã SAP-Odata-URL-Generation.py cho hàm SAP-Odata-URL-Generation và SAP-Sales-Order-Query.py cho SAP-Sales-Order-Query từ kho GitHub. Lưu ý: Điều chỉnh mã với các giá trị cụ thể cho triển khai của bạn như kb_id, SecretId, v.v.</li>
+<li>Cấu hình: Bộ nhớ: 1024MB, Thời gian chờ: 15 phút.</li>
+<li>Lớp: Thêm lớp requests-layer.zip để thêm mô-đun requests vào hàm Lambda từ kho GitHub.</li>
+<li>Quyền: Cần cấu hình các quyền dưới đây cho các hàm Lambda.
+<ul>
+<li>SAP-Odata-URL-Generation: Vai trò thực thi – Ngoài vai trò cơ bản của Lambda, tạo một chính sách IAM mới với các hành động sau: bedrock:InvokeModel, bedrock-agent-runtime:Retrieve, secretsmanager:GetSecretValue. Tuyên bố chính sách dựa trên tài nguyên – Quyền lambda:InvokeFunction cho ARN của Bedrock Agent mà chúng ta sẽ tạo ở Bước 4.</li>
+<li>SAP-Sales-Order-Query: Vai trò thực thi – Ngoài vai trò cơ bản của Lambda, tạo một chính sách IAM mới với các hành động sau: bedrock:InvokeModel, secretsmanager:GetSecretValue. Tuyên bố chính sách dựa trên tài nguyên – Quyền lambda:InvokeFunction cho ARN của Bedrock Agent mà chúng ta sẽ tạo ở Bước 4.</li>
+</ul>
+</li>
+</ul>
+<p>Để biết thêm thông tin, xem <em>Xây dựng hàm Lambda với Python</em> và <em>Làm việc với các lớp cho hàm Lambda Python</em>.</p>
+<p><strong>Bước 2 – Tạo logic kinh doanh để lấy dữ liệu từ hệ thống không phải SAP</strong></p>
+<p>I. Tôi sẽ bắt đầu bằng cách tạo một bảng DynamoDB, với các đầu vào dưới đây.</p>
+<ul>
+<li>Tên bảng: logistics.</li>
+<li>Khóa phân vùng: order_id.</li>
+</ul>
+<p>Sử dụng tệp Items.json từ kho GitHub để tạo mục trong bảng DynamoDB. Để biết thêm thông tin, xem <em>Tạo mục bảng Amazon DynamoDB từ tệp JSON</em>.</p>
+<p>II. Bây giờ, tôi sẽ tạo một hàm Lambda để trích xuất dữ liệu từ bảng DynamoDB dựa trên truy vấn của người dùng.</p>
+<ul>
+<li>Chọn Tạo từ đầu.</li>
+<li>Tên hàm: Chọn tên cho hàm với mô tả thân thiện với người dùng. Tôi đã chọn Logistics-System.</li>
+<li>Môi trường chạy: Python 3.13.</li>
+<li>Kiến trúc: x86_64.</li>
+<li>Cấu hình: Bộ nhớ: 1024MB, Thời gian chờ: 15 phút.</li>
+<li>Mã: Sao chép mã Logistics-System.py từ kho GitHub.</li>
+<li>Quyền: Thêm các quyền sau cho hàm Lambda. Vai trò thực thi – Ngoài vai trò cơ bản của Lambda, tạo một chính sách IAM mới với các hành động sau: dynamodb:Query, dynamodb:DescribeTable. Tuyên bố chính sách dựa trên tài nguyên – Quyền lambda:InvokeFunction cho ARN của Bedrock Agent mà chúng ta sẽ tạo ở Bước 4.</li>
+</ul>
+<p><strong>Bước 3 – Tạo cơ sở tri thức cho các truy vấn chung</strong></p>
+<p>Bây giờ, tôi sẽ tạo một cơ sở tri thức thứ ba. Cơ sở tri thức này sẽ đóng vai trò là kho thông tin chung. Người dùng có thể truy cập tài nguyên này để tìm hiểu về các chủ đề khác nhau, từ thông tin tổ chức đến chuyên môn cụ thể theo chủ đề, tùy theo yêu cầu.</p>
+<p>General-information-knowledgebase: Trong bản demo này, tôi sẽ sử dụng cơ sở tri thức này để cung cấp hướng dẫn về các quy trình kinh doanh SAP.</p>
+<p>Tôi đã xem xét các đầu vào dưới đây khi tạo cơ sở tri thức, giữ phần còn lại ở giá trị mặc định.</p>
+<ul>
+<li>Cung cấp chi tiết cơ sở tri thức
+<ul>
+<li>Tên cơ sở tri thức: Chọn tên cho mỗi cơ sở tri thức, tôi đã sử dụng General-information-knowledgebase với mô tả thân thiện với người dùng.</li>
+<li>Quyền IAM: Chọn Tạo và sử dụng vai trò dịch vụ mới.</li>
+</ul>
+</li>
+<li>Cấu hình nguồn dữ liệu
+<ul>
+<li>Nguồn dữ liệu: Chọn Amazon S3.</li>
+<li>Tên nguồn dữ liệu: Chọn tên cho nguồn dữ liệu theo ý bạn.</li>
+<li>S3 URI: Tạo bucket S3, tải lên tệp “How to create SAP Sales Order pdf” từ kho GitHub và cung cấp URI S3 tương ứng.</li>
+</ul>
+</li>
+<li>Cấu hình lưu trữ và xử lý dữ liệu
+<ul>
+<li>Mô hình nhúng: Amazon Titan Text Embeddings V2.</li>
+<li>Cơ sở dữ liệu vector: Phương pháp tạo vector là Tạo nhanh kho vector mới và kho vector là Amazon OpenSearch Serverless.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Đây là giao diện cuối cùng của tôi</strong></p>
+<p><em><img src="../../../images/3-BlogsTranslated/blog1.hinh3.png" alt=""></em></p>
+<p><strong>Bước 4 – Tạo Bedrock Agent</strong></p>
+<p>Trong bước này, tôi sẽ tạo một Bedrock Agent để giúp chúng ta điều phối giữa các nguồn dữ liệu khác nhau mà chúng ta đã tạo trong các bước trước để trả lời các truy vấn của người dùng.</p>
+<p>Tôi đã xem xét các đầu vào dưới đây khi tạo Bedrock Agent, giữ tất cả các cài đặt khác ở giá trị mặc định.</p>
+<ul>
+<li>Chi tiết Agent:
+<ul>
+<li>Tên Agent: Chọn tên cho agent và mô tả thân thiện với người dùng. Tôi đã đặt tên là Business-Query-System.</li>
+<li>Vai trò tài nguyên Agent: Chọn Tạo và sử dụng vai trò dịch vụ mới.</li>
+<li>Chọn mô hình: Chọn Claude 3 Sonnet v1. Bạn có thể chọn một LLM khác, nhưng bạn cần sửa đổi các lời nhắc tương ứng để có phản hồi mong muốn.</li>
+<li>Hướng dẫn cho Agent: Cung cấp hướng dẫn chi tiết, từng bước, giải thích rõ ràng những gì bạn muốn Agent thực hiện.</li>
+</ul>
+</li>
+</ul>
+<p>Bạn là một trợ lý AI hỗ trợ người dùng truy vấn dữ liệu bán hàng SAP trực tiếp từ hệ thống SAP và chi tiết vận chuyển từ hệ thống logistics. Bạn cũng giúp người dùng với các truy vấn chung về quy trình kinh doanh từ cơ sở tri thức của công ty.</p>
+<ul>
+<li>Cài đặt bổ sung: Chọn đầu vào người dùng là Bật.</li>
+<li>Nhóm hành động: Nhóm hành động xác định các nhiệm vụ mà agent nên hỗ trợ người dùng thực hiện.
+<ul>
+<li>Nhóm hành động: SAP-Sales-Order. Tôi sẽ sử dụng nhóm hành động này để xử lý bất kỳ truy vấn nào liên quan đến đơn hàng bán hàng SAP.
+<ul>
+<li>Tên nhóm hành động: Chọn tên cho nhóm hành động và đưa ra mô tả thân thiện với người dùng. Tôi đã đặt tên là SAP-Sales-Order.</li>
+<li>Loại nhóm hành động: Xác định bằng chi tiết hàm.</li>
+<li>Gọi nhóm hành động: Chọn hàm Lambda hiện có và chọn hàm Lambda đã tạo ở Bước 1, SAP-Sales-Order-Query.</li>
+<li>Tên hàm nhóm hành động 1: SalesOrder và cung cấp mô tả cho hàm.</li>
+</ul>
+</li>
+<li>Nhóm hành động: Logistics-System. Tôi sẽ sử dụng nhóm hành động này để xử lý bất kỳ truy vấn nào liên quan đến thông tin logistics cho đơn hàng bán hàng.
+<ul>
+<li>Tên nhóm hành động: Chọn tên cho nhóm hành động và đưa ra mô tả thân thiện với người dùng. Tôi đã đặt tên là Logistics-System.</li>
+<li>Loại nhóm hành động: Xác định bằng lược đồ API.</li>
+<li>Gọi nhóm hành động: Chọn hàm Lambda hiện có và chọn hàm Lambda đã tạo ở Bước 2, Logistics-System.</li>
+<li>Lược đồ nhóm hành động: Chọn lược đồ API hiện có.</li>
+<li>S3 URL: Tạo bucket S3 và tải tệp logistics.json từ kho GitHub lên bucket S3 và cung cấp URL S3 của bucket.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Bộ nhớ: Chọn Bật với thời gian bộ nhớ là 2 ngày và số phiên gần đây tối đa là 20.</li>
+<li>Cơ sở tri thức: Thêm các cơ sở tri thức đã tạo trước đó.
+<ul>
+<li>Chọn cơ sở tri thức: SAP-external-knowledgebase.</li>
+</ul>
+</li>
+</ul>
+<p>Hướng dẫn cơ sở tri thức cho Agent: Sử dụng cơ sở tri thức này khi bạn cần thông tin bên ngoài hệ thống SAP và kết hợp với dữ liệu hệ thống SAP để hoàn thành phản hồi.</p>
+<ul>
+<li>Chọn cơ sở tri thức: General-Information-knowledgebase.</li>
+</ul>
+<p>Hướng dẫn cơ sở tri thức cho Agent: Sử dụng cơ sở tri thức này để trả lời các câu hỏi kinh doanh chung từ người dùng mà không có sẵn từ hệ thống SAP.</p>
+<ul>
+<li>Chi tiết chiến lược điều phối – Điều phối mặc định. Các agent Bedrock cung cấp các mẫu lời nhắc mặc định, nhưng chúng có thể được tùy chỉnh để đáp ứng các yêu cầu cụ thể. Tôi sẽ tùy chỉnh các mẫu lời nhắc dưới đây để phù hợp với yêu cầu trường hợp sử dụng cụ thể của chúng ta.
+<ul>
+<li>Tiền xử lý: Chọn Ghi đè mẫu tiền xử lý mặc định. Thêm phần dưới đây vào mẫu lời nhắc.</li>
+</ul>
+</li>
+</ul>
+<p>- Danh mục F: Các câu hỏi có thể được trả lời hoặc hỗ trợ bởi agent gọi hàm của chúng ta bằng cách sử dụng các hàm đã cung cấp và các đối số từ lịch sử hội thoại hoặc các đối số liên quan mà nó có thể thu thập bằng hàm askuser VÀ cũng cần dữ liệu bên ngoài từ cơ sở tri thức để hoàn thành phản hồi. Kết hợp dữ liệu từ hệ thống SAP hoặc hệ thống Logistics không phải SAP và cơ sở tri thức bên ngoài để chuẩn bị câu trả lời cuối cùng</p>
+<ul>
+<li>Điều phối: Chọn Ghi đè mẫu điều phối mặc định. Thêm văn bản dưới đây vào các phần tương ứng trong mẫu lời nhắc.</li>
+</ul>
+<p>$knowledge_base_guideline$</p>
+<p>- Nếu bất kỳ dữ liệu nào không được cập nhật trong hệ thống Logistics như ngày giao hàng, thì kiểm tra cơ sở tri thức có tên &lsquo;SAP-external-knowledgebase&rsquo; để tìm thời gian giao hàng ước tính theo danh mục vận chuyển. Sau đó, xem xét thời gian đó và cộng vào ngày &lsquo;Đơn hàng Nhận được&rsquo; và chia sẻ ngày giao hàng ước tính với người dùng.</p>
+<p>- Nếu hệ thống SAP báo lỗi do dữ liệu yêu cầu không có sẵn, kiểm tra cơ sở tri thức có tên &lsquo;SAP-external-knowledgebase&rsquo; để tìm giải thích về MÃ LỖI. Chỉ trả lời người dùng với giải thích về mã lỗi.</p>
+<p>$tools_guidelines$ [Phần này không tồn tại, chúng ta cần tạo nó]</p>
+<p>- Chỉ gọi công cụ &lsquo;SAP-Sales-Order&rsquo; cho bất kỳ câu hỏi nào liên quan đến đơn hàng bán hàng.</p>
+<p>- Chỉ gọi công cụ &lsquo;Logistics-System&rsquo; cho bất kỳ chi tiết vận chuyển nào cho đơn hàng bán hàng.</p>
+<p>- KHÔNG gọi cả hai công cụ &lsquo;SAP-Sales-Order&rsquo; và &lsquo;Logistics-System&rsquo; trừ khi người dùng yêu cầu cả hai thông tin.</p>
+<p>$multiple_tools_guidelines$ [Phần này không tồn tại, chúng ta cần tạo nó]</p>
+<p>- Nếu người dùng hỏi câu hỏi cần gọi nhiều hơn một công cụ. Gọi các công cụ từng cái một. Thu thập phản hồi từ cả hai công cụ và sau đó kết hợp chúng trước khi trả lời người dùng.</p>
+<p>Ví dụ, nếu người dùng yêu cầu cả thông tin Đơn hàng Bán hàng và Logistics. Đầu tiên, lấy chi tiết Đơn hàng Bán hàng với công cụ Đơn hàng Bán hàng. Sau đó, lấy chi tiết logistics từ công cụ Logistics. Cuối cùng, kết hợp cả hai phản hồi thành một khi trả lời người dùng.</p>
+<p>Sau khi nhập tất cả chi tiết, tôi sẽ Lưu và sau đó chọn Chuẩn bị để cập nhật các thay đổi mới nhất. Để điều hướng đến trang tổng quan agent, chọn Lưu và thoát.</p>
+<p>Cuối cùng, tạo Bí danh để có một bản chụp nhanh hoặc phiên bản cụ thể của agent được sử dụng trong ứng dụng.</p>
+<p>Chọn Tạo, cung cấp tên Bí danh với mô tả thân thiện với người dùng.</p>
+<p>Chọn Tạo phiên bản mới và liên kết nó với bí danh này cho phiên bản với thông lượng mặc định là Theo yêu cầu.</p>
+<p>Để biết thêm thông tin, xem <em>Tạo và cấu hình agent thủ công</em>.</p>
+<p><strong>Đây là giao diện cuối cùng của tôi</strong></p>
+<p><em><img src="../../../images/3-BlogsTranslated/blog1.hinh4.png" alt=""></em></p>
+<p><em><strong><img src="../../../images/3-BlogsTranslated/blog1.hinh5.png" alt=""></strong></em></p>
+<p>Bây giờ, tôi cần điều chỉnh các vai trò IAM cho hàm Lambda để Bedrock Agent có thể gọi chúng.</p>
+<p>Thực hiện các bước tại <em>Sử dụng chính sách dựa trên tài nguyên cho Lambda</em> và gắn chính sách dựa trên tài nguyên sau vào hàm Lambda để cho phép Amazon Bedrock truy cập hàm Lambda cho các nhóm hành động của agent, thay thế các ${giá trị} khi cần thiết.</p>
+<p>JSON<br>
+{<br>
+&ldquo;Version&rdquo;: &ldquo;2012-10-17&rdquo;,<br>
+&ldquo;Statement&rdquo;: [<br>
+{<br>
+&ldquo;Sid&rdquo;: &ldquo;AccessLambdaFunction&rdquo;,<br>
+&ldquo;Effect&rdquo;: &ldquo;Allow&rdquo;,<br>
+&ldquo;Principal&rdquo;: {<br>
+&ldquo;Service&rdquo;: &ldquo;bedrock.amazonaws.com&rdquo;<br>
+},<br>
+&ldquo;Action&rdquo;: &ldquo;lambda:InvokeFunction&rdquo;,<br>
+&ldquo;Resource&rdquo;: &ldquo;arn:aws:lambda:${region}:${account-id}:function:function-name&rdquo;,<br>
+&ldquo;Condition&rdquo;: {<br>
+&ldquo;StringEquals&rdquo;: {<br>
+&ldquo;AWS:SourceAccount&rdquo;: &ldquo;${account-id}&rdquo;<br>
+},<br>
+&ldquo;ArnLike&rdquo;: {<br>
+&ldquo;AWS:SourceArn&rdquo;: &ldquo;arn:aws:bedrock:${region}:${account-id}:agent/${agent-id}&rdquo;<br>
+}<br>
+}<br>
+}<br>
+]</p>
+<p>}</p>
+<p><strong>Đây là chính sách của tôi</strong></p>
+<p><em>{ &ldquo;Version&rdquo;: &ldquo;2012-10-17&rdquo;, &ldquo;Id&rdquo;: &ldquo;default&rdquo;, &ldquo;Statement&rdquo;: [ { &ldquo;Sid&rdquo;: &ldquo;bedrock-agent-sales&rdquo;, &ldquo;Effect&rdquo;: &ldquo;Allow&rdquo;, &ldquo;Principal&rdquo;: { &ldquo;Service&rdquo;: &ldquo;bedrock.amazonaws.com&rdquo; }, &ldquo;Action&rdquo;: &ldquo;lambda:InvokeFunction&rdquo;, &ldquo;Resource&rdquo;: &ldquo;arn:aws:lambda:us-east-1:1234567xxxx:function:SAP-Sales-Order-Query&rdquo;, &ldquo;Condition&rdquo;: { &ldquo;StringEquals&rdquo;: { &ldquo;AWS:SourceAccount&rdquo;: &ldquo;1234567xxxx&rdquo; }, &ldquo;AWS:SourceArn&rdquo;: { &ldquo;arn:aws:bedrock:us-east-1: 1234567xxxx:agent/VX5FAWE3OO&rdquo; } } } ] }</em></p>
+<p><strong>Bước 5 – Tạo giao diện người dùng với Microsoft Teams, Slack và Streamlit</strong></p>
+<p>Bước này liên quan đến việc phát triển một giao diện người dùng cho phép người dùng tương tác với Bedrock Agent.</p>
+<ul>
+<li><strong>Microsoft Teams</strong> – Tích hợp này yêu cầu truy cập vào cả MS Teams (với quyền phù hợp) và Amazon Q Developer trong ứng dụng trò chuyện. Amazon Q Developer trong ứng dụng trò chuyện (trước đây là AWS Chatbot) cho phép bạn tương tác với Bedrock Agents GenAI trong Microsoft Teams.</li>
+</ul>
+<p><strong>Bước 1: Cấu hình truy cập ứng dụng</strong></p>
+<p>Microsoft Teams được cài đặt và được quản trị viên tổ chức của bạn phê duyệt.</p>
+<p><strong>Bước 2: Cấu hình kênh Teams</strong></p>
+<p>Tạo một kênh chuẩn MS Teams hoặc sử dụng kênh hiện có và thêm Amazon Q Developer vào kênh. [Lưu ý: Cần kênh chuẩn vì Microsoft Teams hiện không hỗ trợ Amazon Q Developer trong các kênh riêng tư]</p>
+<ul>
+<li>Trong Microsoft Teams, tìm tên nhóm của bạn và chọn, sau đó chọn Quản lý nhóm.</li>
+<li>Chọn Ứng dụng, sau đó chọn Thêm ứng dụng.</li>
+<li>Nhập Amazon Q Developer vào thanh tìm kiếm để tìm Amazon Q Developer.</li>
+<li>Chọn bot.</li>
+<li>Chọn Thêm vào nhóm và hoàn thành lời nhắc.</li>
+</ul>
+<p><strong>Bước 3: Cấu hình Amazon Q Developer cho client Teams</strong></p>
+<p>Bước này cung cấp quyền truy cập cho Amazon Q Developer trong ứng dụng trò chuyện vào kênh MS Teams của bạn.</p>
+<ul>
+<li>Mở Amazon Q Developer trong ứng dụng trò chuyện trong bảng điều khiển AWS.</li>
+<li>Trong Cấu hình client trò chuyện, chọn Microsoft Teams, sao chép và dán URL kênh Microsoft Teams mà chúng ta đã tạo ở bước trước, sau đó chọn Cấu hình. [Bạn sẽ được chuyển hướng đến trang ủy quyền Teams để yêu cầu quyền truy cập thông tin của Amazon Q Developer].</li>
+<li>Trên trang ủy quyền Microsoft Teams, chọn Chấp nhận. Ở phía bên trái, giờ bạn sẽ thấy kênh Teams của bạn được liệt kê trong Microsoft Teams.</li>
+</ul>
+<p>Tiếp theo, tôi sẽ liên kết kênh MS Teams với cấu hình của mình.</p>
+<p>Trên trang chi tiết Teams trong bảng điều khiển Amazon Q Developer, chọn Cấu hình kênh mới. Tôi có các đầu vào dưới đây cho cấu hình của mình, giữ phần còn lại ở mặc định.</p>
+<ul>
+<li>Chi tiết cấu hình:
+<ul>
+<li>Tên cấu hình: Chọn tên cho cấu hình của bạn. Tôi đã đặt tên là aws-sap-demos-team.</li>
+</ul>
+</li>
+<li>Kênh Microsoft Teams:
+<ul>
+<li>URL kênh: Sao chép và dán URL kênh Microsoft Teams mà chúng ta đã tạo ở bước 2.</li>
+</ul>
+</li>
+<li>Quyền:
+<ul>
+<li>Cài đặt vai trò: Chọn Vai trò kênh.</li>
+<li>Vai trò kênh: Chọn Tạo vai trò IAM bằng mẫu.</li>
+<li>Tên vai trò: Chọn tên theo ý bạn. Tôi đã đặt tên là awschatbot-sap-genai-teams-role.</li>
+<li>Mẫu chính sách: Quyền truy cập Amazon Q Developer.</li>
+<li>Chính sách bảo vệ kênh [Tên chính sách]: AWSLambdaBasicExecutionRole, AmazonQDeveloperAccess. Bạn có thể điều chỉnh các chính sách IAM theo yêu cầu của mình, nhưng luôn khuyến nghị tuân theo thực tiễn quyền tối thiểu.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Bước 4: Kết nối agent với kênh trò chuyện</strong></p>
+<p>Kết nối Amazon Q Developer Bedrock Agent yêu cầu hành động IAM bedrock:InvokeAgent.</p>
+<p>Thêm chính sách dưới đây vào vai trò IAM: awschatbot-sap-genai-teams-role đã tạo ở bước trước.</p>
+<p>JSON<br>
+{<br>
+&ldquo;Sid&rdquo;: &ldquo;AllowInvokeBedrockAgent&rdquo;,<br>
+&ldquo;Effect&rdquo;: &ldquo;Allow&rdquo;,<br>
+&ldquo;Action&rdquo;: &ldquo;bedrock:InvokeAgent&rdquo;,<br>
+&ldquo;Resource&rdquo;: [<br>
+&ldquo;arn:aws:bedrock:aws-region:&lt;AWS Account ID&gt;:agent-alias/&lt;Bedrock Agent ID&gt;/&lt;Agent Alias ID&gt;/&rdquo;<br>
+]<br>
+}</p>
+<p>Để thêm Bedrock Agent vào kênh trò chuyện của bạn, nhập như sau. Chọn tên kết nối theo ý bạn.</p>
+<p>@Amazon Q connector add connector_name arn:aws:bedrock:aws-region:AWSAccountID:agent/AgentID AliasID</p>
+<p>Mục nhập của tôi trông như thế này:</p>
+<p>@Amazon Q connector add order_assistant arn:aws:bedrock:us-east-1:xxxxxxx:agent/VX5FAWE3OO VG92WRF1JI</p>
+<p>Để biết thêm thông tin, xem <a href="https://docs.aws.amazon.com/chatbot/latest/adminguide/teams-setup.html">Tutorial: Get started with Microsoft Teams</a></p>
+<p><strong>Giao diện Teams trông như thế này</strong></p>
+<p><em><img src="../../../images/3-BlogsTranslated/blog1.hinh6.png" alt=""></em></p>
+<ul>
+<li><strong>Slack</strong> – Tích hợp này yêu cầu truy cập vào cả Slack (với quyền phù hợp) và Amazon Q Developer trong ứng dụng trò chuyện. Amazon Q Developer trong ứng dụng trò chuyện (trước đây là AWS Chatbot) cho phép bạn tương tác với Bedrock Agents GenAI trong Slack.</li>
+</ul>
+<p><strong>Bước 1: Cấu hình truy cập ứng dụng</strong></p>
+<p>Quản trị viên không gian làm việc cần phê duyệt việc sử dụng ứng dụng Amazon Q Developer trong không gian làm việc.</p>
+<p><strong>Bước 2: Cấu hình kênh Slack</strong></p>
+<p>Tạo một kênh Slack hoặc sử dụng kênh hiện có và thêm Amazon Q Developer vào kênh Slack.</p>
+<p>Trong kênh Slack của bạn, nhập /invite @Amazon Q và chọn Mời Họ.</p>
+<p><strong>Bước 3: Cấu hình Amazon Q Developer cho client Slack</strong></p>
+<p>Bước này cung cấp quyền truy cập cho Amazon Q Developer trong ứng dụng trò chuyện vào không gian làm việc Slack của bạn.</p>
+<ul>
+<li>Mở Amazon Q Developer trong ứng dụng trò chuyện trong bảng điều khiển AWS. Trong Cấu hình client trò chuyện, chọn Slack, sau đó chọn Cấu hình. [Bạn sẽ được chuyển hướng đến trang ủy quyền Slack để yêu cầu quyền truy cập thông tin của Amazon Q Developer].</li>
+<li>Chọn không gian làm việc Slack mà bạn muốn sử dụng với Amazon Q Developer và chọn Cho phép.</li>
+<li>Ở phía bên trái, giờ bạn sẽ thấy không gian làm việc Slack của bạn được liệt kê trong Slack.</li>
+</ul>
+<p>Tiếp theo, tôi sẽ liên kết một kênh với cấu hình của mình.</p>
+<p>Trên trang chi tiết Không gian làm việc trong bảng điều khiển Amazon Q Developer, chọn Cấu hình kênh mới. Tôi có các đầu vào dưới đây cho cấu hình của mình, giữ phần còn lại ở mặc định.</p>
+<ul>
+<li>Chi tiết cấu hình:
+<ul>
+<li>Tên cấu hình: Chọn tên cho cấu hình của bạn. Tôi đã đặt tên là sap-genai-slack-chatbot.</li>
+</ul>
+</li>
+<li>Tùy chọn nội bộ Amazon:
+<ul>
+<li>Phân loại tài khoản: Chọn Không phải sản xuất.</li>
+</ul>
+</li>
+<li>Kênh Slack:
+<ul>
+<li>ID kênh: Cung cấp ID kênh của kênh Slack mà bạn đã cấu hình ở bước 2.</li>
+</ul>
+</li>
+<li>Quyền:
+<ul>
+<li>Cài đặt vai trò: Chọn Vai trò kênh.</li>
+<li>Vai trò kênh: Chọn Tạo vai trò IAM bằng mẫu.</li>
+<li>Tên vai trò: Chọn tên theo ý bạn. Tôi đã đặt tên là aws-sap-genai-chatbot-role.</li>
+<li>Mẫu chính sách: Quyền truy cập Amazon Q Developer.</li>
+<li>Chính sách bảo vệ kênh [Tên chính sách]: AWSLambdaBasicExecutionRole, AmazonQDeveloperAccess. Bạn có thể điều chỉnh các chính sách IAM theo yêu cầu của mình, nhưng luôn khuyến nghị tuân theo thực tiễn quyền tối thiểu.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Bước 4: Kết nối agent với kênh trò chuyện</strong></p>
+<p>Kết nối Amazon Q Developer Bedrock Agent yêu cầu hành động IAM bedrock:InvokeAgent.</p>
+<p>Thêm chính sách dưới đây vào vai trò IAM: awschatbot-sap-genai-teams-role đã tạo ở bước trước.</p>
+<p>JSON<br>
+{<br>
+&ldquo;Sid&rdquo;: &ldquo;AllowInvokeBedrockAgent&rdquo;,<br>
+&ldquo;Effect&rdquo;: &ldquo;Allow&rdquo;,<br>
+&ldquo;Action&rdquo;: &ldquo;bedrock:InvokeAgent&rdquo;,<br>
+&ldquo;Resource&rdquo;: [<br>
+&ldquo;arn:aws:bedrock:aws-region:&lt;AWS Account ID&gt;:agent-alias/&lt;Bedrock Agent ID&gt;/&lt;Agent Alias ID&gt;/&rdquo;<br>
+]<br>
+}</p>
+<p>Để thêm Bedrock Agent vào kênh trò chuyện của bạn, nhập như sau. Chọn tên kết nối theo ý bạn.</p>
+<p>@Amazon Q connector add connector_name arn:aws:bedrock:aws-region:AWSAccountID:agent/AgentID AliasID.</p>
+<p>Mục nhập của tôi trông như thế này:</p>
+<p>@Amazon Q connector add order_assistant arn:aws:bedrock:us-east-1:xxxxxxx:agent/VX5FAWE3OO VG92WRF1JI</p>
+<p>Để biết thêm thông tin, xem <a href="https://docs.aws.amazon.com/chatbot/latest/adminguide/slack-setup.html#getting-started-prerequisites-slack">Tutorial: Get started with Slack</a></p>
+<p><strong>Giao diện Slack trông như thế này</strong><br>
+<strong><img src="../../../images/3-BlogsTranslated/blog1.hinh7.png" alt=""></strong></p>
+<ul>
+<li><strong>Streamlit</strong> – Streamlit là một khung Python mã nguồn mở thường được sử dụng để xây dựng các ứng dụng web tương tác cho các tập lệnh Python. Tôi đã thực hiện các bước dưới đây để lưu trữ ứng dụng trên một phiên bản Amazon EC2.</li>
+<li>Khởi tạo một phiên bản EC2, tôi đã xem xét một phiên bản Amazon Linux t2.micro.</li>
+<li>Thiết lập phiên bản EC2 với nhóm bảo mật cần thiết cho phép lưu lượng HTTP/HTTPS (cổng 80/443/8501 hoặc bất kỳ cổng nào khác bạn đã chọn sử dụng).</li>
+<li>Chuẩn bị môi trường như sau:</li>
+</ul>
+<p><strong>Cài đặt các gói cần thiết</strong></p>
+<p>$sudo apt update</p>
+<p>$sudo apt-get install python3-venv</p>
+<p><strong>Thiết lập môi trường ảo</strong></p>
+<p>$mkdir streamlit-demo</p>
+<p>$cd streamlit-demo</p>
+<p>$python3 -m venv venv</p>
+<p>$source venv/bin/activate</p>
+<ul>
+<li>Cài đặt Streamlit</li>
+</ul>
+<p>$pip install streamlit</p>
+<ul>
+<li>Tạo một tệp có tên streamlit-app.py bằng trình chỉnh sửa Vi/Vim/nano và sao chép mã trong streamlit-app.py từ kho GitHub.</li>
+<li>Chạy ứng dụng Streamlit với lệnh dưới đây</li>
+</ul>
+<p>$nohup streamlit run streamlit-app.py &amp;</p>
+<ul>
+<li>Chạy ứng dụng Streamlit ở chế độ nền với lệnh dưới đây</li>
+</ul>
+<p>$nohup streamlit run streamlit-app.py &amp;</p>
+<ul>
+<li>Streamlit gán cổng có sẵn từ 8501 tăng dần lên 1. Nếu bạn muốn Streamlit sử dụng một cổng cụ thể, bạn có thể sử dụng lệnh dưới đây</li>
+</ul>
+<p>$streamlit run streamlit-app.py --server.port XXXX</p>
+<p>Sau khi chạy các lệnh trên, tôi có thể thấy URL để mở ứng dụng Streamlit trong trình duyệt của mình, như được hiển thị dưới đây.</p>
+<p><strong><img src="../../../images/3-BlogsTranslated/blog1.hinh8.png" alt=""></strong><br>
+<strong>Ứng dụng Streamlit trông như thế này</strong><br>
+<strong><img src="../../../images/3-BlogsTranslated/blog1.hinh9.png" alt=""></strong></p>
+<p><strong>Chi phí</strong></p>
+<p>Việc vận hành các Mô hình Ngôn ngữ Lớn (LLMs) đòi hỏi cơ sở hạ tầng, phát triển và chi phí bảo trì đáng kể. Tuy nhiên, các dịch vụ AWS như Amazon Bedrock có thể giảm chi phí đáng kể thông qua quản lý cơ sở hạ tầng đơn giản hóa, quy trình phát triển được tối ưu, mô hình định giá linh hoạt và các tùy chọn tối ưu hóa chi phí khác nhau để truy cập các LLM theo lựa chọn của bạn.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Dịch vụ AWS – US East (N. Virginia)</th>
+          <th>Chi phí</th>
+          <th>Ước tính [chạy trong một giờ]</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Bedrock – Suy luận Mô hình Nền tảng LLM [Claude 3.5 Sonnet]</td>
+          <td>100K Đầu vào, 200K Đầu ra</td>
+          <td>$3.3</td>
+      </tr>
+      <tr>
+          <td>Bedrock – Suy luận Mô hình Nhúng [Amazon Titan Text Embeddings v2]</td>
+          <td>100 tài liệu, trung bình 500 từ mỗi tài liệu</td>
+          <td>$0.10</td>
+      </tr>
+      <tr>
+          <td>Đơn vị Tính toán OpenSearch (OCU) – Lập chỉ mục</td>
+          <td>2 OCU [tối thiểu 2 OCU]</td>
+          <td>$0.48</td>
+      </tr>
+      <tr>
+          <td>Đơn vị Tính toán OpenSearch (OCU) – Tìm kiếm và Truy vấn</td>
+          <td>2 OCU [tối thiểu 2 OCU]</td>
+          <td>$0.48</td>
+      </tr>
+      <tr>
+          <td>Lưu trữ Quản lý OpenSearch</td>
+          <td>10GB</td>
+          <td>$0.24</td>
+      </tr>
+      <tr>
+          <td>Phiên bản EC2 [Ứng dụng Streamlit]</td>
+          <td>t2.micro</td>
+          <td>$0.0116</td>
+      </tr>
+      <tr>
+          <td>Lambda, Secrets Manager, DynamoDB</td>
+          <td></td>
+          <td>$0.2</td>
+      </tr>
+      <tr>
+          <td><strong>Chi phí ước tính để sử dụng ứng dụng trong một giờ – $4.8116</strong></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<p>Để biết thêm thông tin, xem <em>Giá <a href="https://aws.amazon.com/bedrock/pricing/">Amazon Bedrock pricing</a>, <a href="https://aws.amazon.com/opensearch-service/pricing/">Amazon OpenSearch Service Pricing</a>, <a href="https://aws.amazon.com/ec2/pricing/on-demand/">Amazon EC2 On-Demand Pricing</a>, <a href="https://aws.amazon.com/lambda/pricing/?trk=73f686c8-9606-40ad-852f-7b2bcafa68fe&amp;sc_channel=ps&amp;s_kwcid=AL!4422!3!651212652669!p!!g!!amazon%20lambda&amp;ef_id=Cj0KCQjwxdXBBhDEARIsAAUkP6hN9YpfOSDCv7S4eeGxIrgdufbFC5HA-qPaLU19nhD4HLRN1LlWolwaApckEALw_wcB:G:s&amp;s_kwcid=AL!4422!3!651212652669!p!!g!!amazon%20lambda!909122559!45462426916&amp;gad_campaignid=909122559&amp;gclid=Cj0KCQjwxdXBBhDEARIsAAUkP6hN9YpfOSDCv7S4eeGxIrgdufbFC5HA-qPaLU19nhD4HLRN1LlWolwaApckEALw_wcB">AWS Lambda pricing</a>, <a href="https://aws.amazon.com/secrets-manager/pricing/">AWS Secrets Manager pricing</a>, <a href="https://aws.amazon.com/dynamodb/pricing/">Amazon DynamoDB pricing</a></em></p>
+<p><strong>Kết luận</strong></p>
+<p>Bài blog này thể hiện cách tạo một trợ lý ảo thông minh tương tác liền mạch với cả hệ thống SAP và không phải SAP bằng cách sử dụng các dịch vụ AWS, tập trung vào Amazon Bedrock. Giải pháp tích hợp các hệ thống SAP cho dữ liệu đơn hàng bán hàng, các hệ thống không phải SAP cho thông tin logistics, và cơ sở tri thức cho các chi tiết bổ sung, tất cả đều có thể truy cập thông qua nhiều giao diện người dùng bao gồm Streamlit, Microsoft Teams và Slack. Bằng cách tận dụng bộ dịch vụ AWS như Lambda, Bedrock, Secrets Manager và DynamoDB, việc triển khai cho phép tương tác ngôn ngữ tự nhiên với các hệ thống doanh nghiệp phức tạp, cung cấp quyền truy cập thống nhất vào các nguồn dữ liệu đa dạng trong khi duy trì bảo mật mạnh mẽ. Kiến trúc không máy chủ và mô hình định giá trả theo sử dụng làm cho giải pháp này trở nên dễ tiếp cận và hiệu quả về chi phí cho các tổ chức muốn nâng cao khả năng truy cập dữ liệu thông qua các giao diện AI hội thoại. Bài blog cung cấp một hướng dẫn chi tiết, từng bước để triển khai giải pháp này, mở đường cho các doanh nghiệp tận dụng AI tạo sinh trong môi trường SAP và không phải SAP của họ.</p>
+<p>Hãy trải nghiệm thực tế trong việc chuyển đổi cách bạn tương tác với dữ liệu doanh nghiệp bằng cách triển khai giải pháp này. Đẩy nhanh quá trình chuyển đổi số của bạn bằng cách khám phá bộ dịch vụ học máy toàn diện của chúng tôi, bao gồm Amazon AgentCore (Xem trước) để triển khai và vận hành các agent AI an toàn ở quy mô lớn, Amazon Forecast cho phân tích dự đoán, Amazon Textract cho xử lý tài liệu thông minh, Amazon Translate cho dịch ngôn ngữ, và Amazon Comprehend cho xử lý ngôn ngữ tự nhiên. Những dịch vụ này tích hợp liền mạch với SAP để đáp ứng các nhu cầu kinh doanh khác nhau và mở ra những khả năng mới cho tổ chức của bạn.</p>
+<p>Truy cập trang <a href="https://aws.amazon.com/sap/">AWS for SAP</a> để tìm hiểu lý do tại sao hàng ngàn khách hàng tin tưởng AWS để di chuyển và đổi mới với SAP.</p>
+<p>TAGS: <a href="https://aws.amazon.com/blogs/awsforsap/tag/saponaws/">#saponaws</a>, <a href="https://aws.amazon.com/blogs/awsforsap/tag/rise-with-sap/">RISE with SAP</a>, <a href="https://aws.amazon.com/blogs/awsforsap/tag/s-4hana/">S/4HANA</a>, <a href="https://aws.amazon.com/blogs/awsforsap/tag/sap-applications/">SAP applications</a>, <a href="https://aws.amazon.com/blogs/awsforsap/tag/sap-beyond/">SAP Beyond</a>, <a href="https://aws.amazon.com/blogs/awsforsap/tag/sap-transformation/">SAP transformation</a></p>
 
 
 
@@ -1701,19 +2056,19 @@ Với BFD → chỉ <strong>dưới 1 giây</strong>.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1765276671"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1765276671"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1765276671"></script>
-    <script src="../../../js/jquery.sticky.js?1765276671"></script>
-    <script src="../../../js/featherlight.min.js?1765276671"></script>
-    <script src="../../../js/highlight.pack.js?1765276671"></script>
+    <script src="../../../js/clipboard.min.js?1765288544"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1765288544"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1765288544"></script>
+    <script src="../../../js/jquery.sticky.js?1765288544"></script>
+    <script src="../../../js/featherlight.min.js?1765288544"></script>
+    <script src="../../../js/highlight.pack.js?1765288544"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1765276671"></script>
-    <script src="../../../js/learn.js?1765276671"></script>
-    <script src="../../../js/hugo-learn.js?1765276671"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1765288544"></script>
+    <script src="../../../js/learn.js?1765288544"></script>
+    <script src="../../../js/hugo-learn.js?1765288544"></script>
 
-    <link href="../../../mermaid/mermaid.css?1765276671" rel="stylesheet" />
-    <script src="../../../mermaid/mermaid.js?1765276671"></script>
+    <link href="../../../mermaid/mermaid.css?1765288544" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1765288544"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
