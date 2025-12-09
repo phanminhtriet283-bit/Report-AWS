@@ -37,8 +37,7 @@ Tại mục cấu hình event, kéo xuống phần JSON và **thay toàn bộ n�
 
 Ví dụ minh họa:
 
-![h4](/5-Workshop/5.3-Create-Lambda-and-Bedrock-call/h4.png)
-
+![h4](/images/5-Workshop/5.3-h4.png)
 Nhấn **Save** để lưu test event.
 
 ---

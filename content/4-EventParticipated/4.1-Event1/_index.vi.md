@@ -120,7 +120,7 @@ Tham dự **AWS Cloud Day 2025** giúp tôi nhìn thấy một lộ trình rõ r
 Giá trị của AI chỉ xuất hiện bền vững khi kết nối chặt chẽ với chiến lược, dữ liệu chuẩn hóa và kỷ luật bảo mật. Doanh nghiệp cần vừa linh hoạt trong thử nghiệm, vừa nghiêm cẩn trong vận hành để mở rộng mà không đánh mất kiểm soát. Con đường rõ ràng: dữ liệu tin cậy → use case có KPI → guardrails đầy đủ → tự động hóa theo giai đoạn.
 
 ### Một Số Hình Ảnh
-![hinh1](/4-EventParticipated/h1.jpg)
-![hinh2](/4-EventParticipated/h2.jpg)
-![hinh3](/4-EventParticipated/h3.jpg)
+![hinh1](/images/4-Event/h1.jpg)
+![hinh2](/images/4-Event/h2.jpg)
+![hinh3](/images/4-Event/h3.jpg)
 

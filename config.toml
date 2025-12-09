@@ -1,7 +1,6 @@
-baseURL = "https://workshop-sample.fcjuni.com/"
-relativeURLs = false
-canonifyURLs = false
-defaultContentLanguage = "en"
+baseURL = "https://phanminhtriet283-bit.github.io/Report-AWS/"
+relativeURLs = true
+canonifyURLs = true
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
@@ -16,7 +15,7 @@ home = [ "HTML", "RSS", "JSON"]
   # Git hub repo link
   editURL = ""
   description = ""
-  author = "thienlh@thienlu.com"
+  author = "phanminhtriet283@gmail.com"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
@@ -48,3 +47,4 @@ weight = 20
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+      

@@ -5,14 +5,16 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-
 Tại đây là phần liệt kê và giới thiệu ngắn gọn các blog AWS mà nhóm đã dịch:
 
-### [Blog 1 – Khả năng phục hồi trong thiết kế: Xây dựng chiến lược khôi phục hiệu quả trước ransomware](3.1-Blog1/)
-Blog này tập trung vào cách doanh nghiệp xây dựng chiến lược **cyber resilience** trước ransomware bằng mô hình **Cloud Hosted Data Vault (CHDV)**. Bài viết giải thích những yếu tố cần cân nhắc khi thiết kế vault — từ việc xác định dữ liệu và chức năng cốt lõi cần bảo vệ, quy trình khôi phục trong các kịch bản tấn công, phân vùng vault, đến các phương thức quản lý quyền truy cập và kiểm soát vận hành. Ngoài ra, blog cũng nhấn mạnh vai trò của con người, quy trình và sự bảo trợ từ lãnh đạo trong việc đảm bảo hoạt động khôi phục đạt hiệu quả cao.
+### [Blog 1 – Hành trình từ người mê thống kê đến nhà tiên phong phân tích NFL: Mike Band](3.1-Blog1/)
 
-### [Blog 2 – Định tuyến động sử dụng Amazon VPC Route Server](3.2-Blog2/)
-Blog này giới thiệu cách sử dụng **Amazon VPC Route Server** để đưa cơ chế định tuyến động (BGP) vào Amazon VPC, giúp kiểm soát đường đi lưu lượng chi tiết hơn và tự động hóa quá trình failover. Thông qua các kịch bản như sử dụng địa chỉ IP nổi (floating IP) cho ứng dụng high availability hoặc triển khai firewall kiểm tra lưu lượng vào/ra VPC, bài viết minh họa cách Route Server cập nhật route tables một cách tự động, giảm thao tác thủ công và tăng khả năng chịu lỗi cho hệ thống mạng trên AWS.
+Blog này kể về hành trình của **Mike Band**, người đã biến niềm đam mê thống kê thể thao từ nhỏ thành sự nghiệp phân tích dữ liệu đột phá tại **NFL Next Gen Stats**. Bài viết mô tả cách anh phát triển thông qua giáo dục và kinh nghiệm thực tế, trước khi góp phần xây dựng các mô hình AI tiên tiến giúp thay đổi cách NFL phân tích và tiếp cận dữ liệu trận đấu. Bên cạnh những thành tựu kỹ thuật, Band cũng chia sẻ những lời khuyên giá trị dành cho thế hệ tiếp theo của các kỹ sư và nhà phân tích — nhấn mạnh sự tò mò, tinh thần chủ động, và học tập không ngừng là chìa khóa của thành công lâu dài.
 
-### [Blog 3 – Ra mắt AWS Asia Pacific (New Zealand) Region](3.3-Blog3/)
-Blog này thông báo về việc AWS chính thức ra mắt **AWS Asia Pacific (New Zealand) Region (ap-southeast-6)**. Nội dung nêu bật các lợi ích của region mới: cho phép lưu trữ dữ liệu tại New Zealand với độ trễ thấp, hỗ trợ khách hàng trong khu vực đáp ứng yêu cầu tuân thủ, thúc đẩy đổi mới về AI/generative AI, và mở rộng hạ tầng cloud phục vụ nhiều ngành khác nhau. Bài viết cũng nhấn mạnh cam kết phát triển bền vững, đầu tư kinh tế – xã hội, và hệ sinh thái đối tác, cộng đồng AWS tại New Zealand.
+### [Blog 2 – Trợ lý AI Agentic cho SAP với AWS Generative AI](3.2-Blog2/)
+
+Blog này là phần 1 trong chuỗi bài viết hướng dẫn xây dựng một trợ lý ảo thông minh sử dụng **Amazon Bedrock** để tương tác liền mạch với hệ thống **SAP**. Bài viết minh họa cách tích hợp **Generative AI** để truy vấn thông tin đơn hàng (từ SAP) và logistics (từ DynamoDB) bằng ngôn ngữ tự nhiên thông qua các giao diện quen thuộc như **Microsoft Teams, Slack và Streamlit**. Giải pháp này giúp dân chủ hóa việc truy cập dữ liệu doanh nghiệp mà không cần kiến thức kỹ thuật chuyên sâu về SQL hay cấu trúc SAP.
+
+### [Blog 3 – Amazon CloudFront hỗ trợ nguồn IPv6 để phân phối IPv6 toàn diện](3.3-Blog3/)
+
+Blog này thông báo **Amazon CloudFront** hiện hỗ trợ kết nối **IPv6 từ biên (edge) đến nguồn (origin)**, cho phép phân phối IPv6 toàn diện từ đầu đến cuối (end-to-end). Bài viết giải thích các lợi ích kỹ thuật quan trọng như loại bỏ chi phí NAT, tăng cường hiệu suất xử lý gói tin, và cải thiện khả năng mở rộng cho các mạng di động hiện đại. Tác giả cũng cung cấp hướng dẫn chi tiết cách cấu hình bản phân phối CloudFront để kích hoạt tính năng IPv6 hoặc ngăn xếp kép (Dual-stack) cho nguồn gốc.

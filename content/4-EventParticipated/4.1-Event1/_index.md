@@ -121,6 +121,7 @@ AI delivers sustainable value only when tightly connected to strategy, standardi
 
 ### Some Photos
 
-![hinh1](/4-EventParticipated/h1.jpg)
-![hinh2](/4-EventParticipated/h2.jpg)
-![hinh3](/4-EventParticipated/h3.jpg)
+![hinh1](/images/4-Event/h1.jpg)
+![hinh2](/images/4-Event/h2.jpg)
+![hinh3](/images/4-Event/h3.jpg)
+

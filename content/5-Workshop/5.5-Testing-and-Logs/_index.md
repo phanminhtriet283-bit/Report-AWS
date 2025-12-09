@@ -1,55 +1,39 @@
 ---
-title : "Kiểm thử"
+title : "Testing"
 weight : 5
 chapter : false
 pre : " <b> 5.5. </b> "
 ---
 
-## Kiểm thử API bằng Thunder Client (VS Code)
+## Test the API with Thunder Client (VS Code)
 
-Sau khi đã tích hợp API Gateway với Lambda, bạn đã có một endpoint HTTP sẵn sàng để kiểm thử.  
-Trong bước này, bạn sẽ sử dụng **Thunder Client** – một extension phổ biến trong VS Code để gửi request và xem phản hồi.
+After integrating API Gateway with Lambda, you have an HTTP endpoint ready for testing.  
+In this step, you’ll use **Thunder Client** — a popular VS Code extension — to send requests and inspect responses.
 
 ---
 
-## 🔹 Bước 1 — Lấy Invoke URL từ API Gateway
+## 🔹 Step 1 — Get the Invoke URL from API Gateway
 
-Trong AWS API Gateway:
+In AWS API Gateway:
 
-1. Mở service **API Gateway**.  
-2. Chọn API bạn vừa tạo, ví dụ: `bedrock-chatbot-api`.  
-3. Ở menu bên trái, chọn **Deploy → Stages**.  
-4. Nhấp vào stage **$default**.  
-5. Ở phần **Stage details**, bạn sẽ thấy **Invoke URL**.
+1. Open the **API Gateway** service.  
+2. Select the API you created, e.g., `bedrock-chatbot-api`.  
+3. In the left menu, choose **Deploy → Stages**.  
+4. Click the **$default** stage.  
+5. In **Stage details**, copy the **Invoke URL**.
 
-![h1](/5-Workshop/5.5-Testing-and-Logs/h1.png)
-![h3](/5-Workshop/5.5-Testing-and-Logs/h3.png)
+![h1](/images/5-Workshop/5.5-h1.png)
+![h3](/images/5-Workshop/5.5-h3.png)
 
-Sao chép **Invoke URL**, ví dụ:
+Copy the **Invoke URL**, for example:
 
 ```
 https://v8p3h9umxg.execute-api.ap-southeast-1.amazonaws.com
 ```
 
-Tiếp theo, thêm path route mà bạn đã cấu hình, ví dụ: `/chat`
+Next, append the route path you configured, e.g., `/chat`.
 
-👉 Endpoint đầy đủ sẽ là:
-
-```
-https://v8p3h9umxg.execute-api.ap-southeast-1.amazonaws.com/chat
-```
-
----
-
-## 🔹 Bước 2 — Cài và mở Thunder Client trong VS Code
-
-1. Mở **VS Code**.  
-2. Chọn tab **Extensions**.  
-3. Gõ tìm **Thunder Client** và nhấn **Install**.  
-4. Sau khi cài đặt xong, biểu tượng **Thunder Client** sẽ xuất hiện ở sidebar.  
-5. Nhấp vào biểu tượng đó và chọn **New Request**.  
-6. Chọn method **POST**.  
-7. Dán endpoint vào ô URL:
+👉 The full endpoint will be:
 
 ```
 https://v8p3h9umxg.execute-api.ap-southeast-1.amazonaws.com/chat
@@ -57,10 +41,26 @@ https://v8p3h9umxg.execute-api.ap-southeast-1.amazonaws.com/chat
 
 ---
 
-## 🔹 Bước 3 — Gửi JSON body và kiểm tra phản hồi
+## 🔹 Step 2 — Install and open Thunder Client in VS Code
 
-1. Chọn tab **Body → JSON**.  
-2. Nhập nội dung:
+1. Open **VS Code**.  
+2. Go to the **Extensions** tab.  
+3. Search for **Thunder Client** and click **Install**.  
+4. After installation, the **Thunder Client** icon appears in the sidebar.  
+5. Click the icon and choose **New Request**.  
+6. Select the **POST** method.  
+7. Paste the endpoint into the URL box:
+
+```
+https://v8p3h9umxg.execute-api.ap-southeast-1.amazonaws.com/chat
+```
+
+---
+
+## 🔹 Step 3 — Send JSON body and check the response
+
+1. Choose the **Body → JSON** tab.  
+2. Enter:
 
 ```json
 {
@@ -68,11 +68,11 @@ https://v8p3h9umxg.execute-api.ap-southeast-1.amazonaws.com/chat
 }
 ```
 
-Nhấn **Send** để gửi request.
+Click **Send** to issue the request.
 
-![h2](/5-Workshop/5.5-Testing-and-Logs/h2.png)
+![h2](/images/5-Workshop/5.5-h2.png)
 
-Nếu hệ thống hoạt động đúng, bạn sẽ nhận được phản hồi tương tự:
+If everything is wired correctly, you should get a response like:
 
 ```json
 {
@@ -80,27 +80,27 @@ Nếu hệ thống hoạt động đúng, bạn sẽ nhận được phản hồ
 }
 ```
 
-Điều này xác nhận rằng:
+This confirms:
 
-- API Gateway nhận request thành công  
-- Lambda chạy đúng và gọi Bedrock  
-- Hệ thống trả về kết quả theo mong đợi  
-
----
-
-## 🔧 Nếu gặp lỗi?
-
-- **403 / AccessDeniedException** → Kiểm tra IAM Role của Lambda  
-- **500 Internal Error** → Xem CloudWatch Logs  
-- **Missing 'question' field** → Kiểm tra JSON body  
-- **Timeout** → Tăng timeout của Lambda lên 10–20 giây  
+- API Gateway received the request successfully  
+- Lambda ran correctly and called Bedrock  
+- The system returned the expected result  
 
 ---
 
-## ✔ Kết luận
+## 🔧 Troubleshooting
 
-Bạn đã kiểm thử thành công toàn bộ pipeline:
+- **403 / AccessDeniedException** → Check the Lambda IAM role  
+- **500 Internal Error** → Inspect CloudWatch Logs  
+- **Missing 'question' field** → Validate the JSON body  
+- **Timeout** → Increase Lambda timeout to 10–20 seconds  
 
-**Client → API Gateway → Lambda → Bedrock → Trả kết quả AI**
+---
 
-Bạn đã hoàn tất phần kiểm thử của workshop.
+## ✔ Conclusion
+
+You’ve successfully tested the end‑to‑end pipeline:
+
+**Client → API Gateway → Lambda → Bedrock → AI Response**
+
+You’ve completed the testing portion of the workshop.

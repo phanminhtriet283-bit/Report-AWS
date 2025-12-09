@@ -15,13 +15,13 @@ Trong bước này, bạn sẽ tạo một HTTP API dùng làm endpoint để cl
 
 Mở Amazon API Gateway Console và chọn **Create API**.
 
-![h1](/5-Workshop/5.4-API-Gateway-Integration/5.4.1-Create-HTTP-API/h1.png)
+![h1](/images/5-Workshop/5.4-h1.png)
 
 ---
 
 ### 🔹 Bước 2 — Chọn **Build** của HTTP API
 
-![h2](/5-Workshop/5.4-API-Gateway-Integration/5.4.1-Create-HTTP-API/h2.png)
+![h2](/images/5-Workshop/5.4-h2.png)
 
 Chọn:
 
@@ -31,7 +31,7 @@ Chọn:
 
 ### 🔹 Bước 3 — Đổi tên API
 
-![h3](/5-Workshop/5.4-API-Gateway-Integration/5.4.1-Create-HTTP-API/h3.png)
+![h3](/images/5-Workshop/5.4-h3.png)
 
 Đặt tên API:
 
