@@ -2,12 +2,12 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>https://phanminhtriet283-bit.github.io/Report-AWS/en/sitemap.xml</loc>
+    <loc>http://localhost:1313/Report-AWS/en/sitemap.xml</loc>
     
   </sitemap>
   
   <sitemap>
-    <loc>https://phanminhtriet283-bit.github.io/Report-AWS/vi/sitemap.xml</loc>
+    <loc>http://localhost:1313/Report-AWS/vi/sitemap.xml</loc>
     
   </sitemap>
   
