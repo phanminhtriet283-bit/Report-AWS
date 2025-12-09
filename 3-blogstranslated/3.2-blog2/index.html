@@ -15,21 +15,21 @@
     <title>Blog 2 :: Internship Report</title>
 
     
-    <link href="../../css/nucleus.css?1765272071" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1765272071" rel="stylesheet">
-    <link href="../../css/hybrid.css?1765272071" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1765272071" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1765272071" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1765272071" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1765272071" rel="stylesheet">
-    <link href="../../css/theme.css?1765272071" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1765272071" rel="stylesheet">
+    <link href="../../css/nucleus.css?1765276671" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1765276671" rel="stylesheet">
+    <link href="../../css/hybrid.css?1765276671" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1765276671" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1765276671" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1765276671" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1765276671" rel="stylesheet">
+    <link href="../../css/theme.css?1765276671" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1765276671" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1765272071" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1765276671" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1765272071"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1765276671"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1765272071"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1765272071"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1765276671"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1765276671"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/phanminhtriet283-bit.github.io\/Report-AWS\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1765272071"></script>
+<script type="text/javascript" src="../../js/search.js?1765276671"></script>
  
   </div>
 
@@ -971,7 +971,7 @@
 <li>Bidirectional BGP sessions for liveness detection</li>
 <li>Appropriate route switching</li>
 </ul>
-<p><img src="../../Report-AWS/3-blogstranslated/3.2-blog2/images/hinh1.png" alt="Figure 1: Dynamic routing architecture with Amazon VPC Route Server"></p>
+<p><img src="../../images/3-BlogsTranslated/2.hinh1.png" alt="Figure 1: Dynamic routing architecture with Amazon VPC Route Server"></p>
 <p><strong>Figure 1: Dynamic routing architecture with Amazon VPC Route Server</strong></p>
 <p>Dynamic routing flow:</p>
 <ol>
@@ -984,7 +984,7 @@
 </ol>
 <hr>
 <h2 id="how-dynamic-routing-works-in-amazon-vpc">How Dynamic Routing Works in Amazon VPC</h2>
-<p><img src="../../Report-AWS/3-blogstranslated/3.2-blog2/images/hinh2.png" alt="Figure 2: Route exchange from Route Server into VPC route tables"></p>
+<p><img src="../../images/3-BlogsTranslated/2.hinh2.png" alt="Figure 2: Route exchange from Route Server into VPC route tables"></p>
 <p><strong>Figure 2: Route exchange from Route Server into VPC route tables</strong></p>
 <p>Sequence:</p>
 <ol>
@@ -997,7 +997,7 @@
 <h2 id="when-should-you-use-dynamic-routing">When Should You Use Dynamic Routing?</h2>
 <h3 id="-automated-failover-handling">✔ Automated Failover Handling</h3>
 <p>Failover in cloud architectures often requires routes to change immediately when an instance, device, or Availability Zone becomes unhealthy.</p>
-<p><img src="../../Report-AWS/3-blogstranslated/3.2-blog2/images/hinh3.png" alt="Figure 3: Failover handled through dynamic routing"></p>
+<p><img src="../../images/3-BlogsTranslated/2.hinh3.png" alt="Figure 3: Failover handled through dynamic routing"></p>
 <p><strong>Figure 3: Failover handled through dynamic routing</strong></p>
 <hr>
 <h3 id="-floating-ip-architecture-for-high-availability">✔ Floating IP Architecture for High Availability</h3>
@@ -1007,7 +1007,7 @@
 <li>trading systems</li>
 <li>real-time services</li>
 </ul>
-<p><img src="../../Report-AWS/3-blogstranslated/3.2-blog2/images/hinh4.png" alt="Figure 4: Floating IP architecture for high uptime"></p>
+<p><img src="../../images/3-BlogsTranslated/2.hinh4.png" alt="Figure 4: Floating IP architecture for high uptime"></p>
 <p><strong>Figure 4: Floating IP architecture for high uptime</strong></p>
 <hr>
 <h3 id="-traffic-inspection-through-firewalls">✔ Traffic Inspection Through Firewalls</h3>
@@ -1022,22 +1022,22 @@
 <li>routing traffic through firewalls on demand</li>
 <li>automatic adjustment when firewalls go up/down</li>
 </ul>
-<p><img src="../../Report-AWS/3-blogstranslated/3.2-blog2/images/hinh5.png" alt="Figure 5: Multi-AZ firewall inspection architecture"></p>
+<p><img src="../../images/3-BlogsTranslated/2.hinh5.png" alt="Figure 5: Multi-AZ firewall inspection architecture"></p>
 <p><strong>Figure 5: Multi-AZ firewall inspection architecture</strong></p>
 <hr>
 <h3 id="-faster-failure-detection-with-bfd">✔ Faster Failure Detection with BFD</h3>
 <p>Before BFD, failover detection could take 10–30 seconds.<br>
 With BFD → <strong>under 1 second</strong>.</p>
-<p><img src="../../Report-AWS/3-blogstranslated/3.2-blog2/images/hinh6.png" alt="Figure 6: Faster failure detection using BFD"></p>
+<p><img src="../../images/3-BlogsTranslated/2.hinh6.png" alt="Figure 6: Faster failure detection using BFD"></p>
 <p><strong>Figure 6: Faster failure detection using BFD</strong></p>
 <hr>
 <h3 id="-automatic-vpc-route-table-updates">✔ Automatic VPC Route Table Updates</h3>
 <p>When routes on the appliance change → VPC route tables update automatically.</p>
-<p><img src="../../Report-AWS/3-blogstranslated/3.2-blog2/images/hinh7.png" alt="Figure 7: Automatic route updates inside VPC"></p>
+<p><img src="../../images/3-BlogsTranslated/2.hinh7.png" alt="Figure 7: Automatic route updates inside VPC"></p>
 <p><strong>Figure 7: Automatic route updates inside VPC</strong></p>
 <hr>
 <h2 id="route-consistency-and-route-advertisement">Route Consistency and Route Advertisement</h2>
-<p><img src="../../Report-AWS/3-blogstranslated/3.2-blog2/images/hinh8.png" alt="Figure 8: Route advertisement inside Route Server"></p>
+<p><img src="../../images/3-BlogsTranslated/2.hinh8.png" alt="Figure 8: Route advertisement inside Route Server"></p>
 <p><strong>Figure 8: Route advertisement inside Route Server</strong></p>
 <p>The Route Server:</p>
 <ul>
@@ -1054,7 +1054,7 @@ With BFD → <strong>under 1 second</strong>.</p>
 <li>faster BGP failover</li>
 <li>improved consistency for latency-sensitive workloads</li>
 </ul>
-<p><img src="../../Report-AWS/3-blogstranslated/3.2-blog2/images/hinh9.png" alt="Figure 9: How BFD accelerates failover"></p>
+<p><img src="../../images/3-BlogsTranslated/2.hinh9.png" alt="Figure 9: How BFD accelerates failover"></p>
 <p><strong>Figure 9: How BFD accelerates failover</strong></p>
 <hr>
 <h1 id="conclusion">Conclusion</h1>
@@ -1711,19 +1711,19 @@ With BFD → <strong>under 1 second</strong>.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1765272071"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1765272071"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1765272071"></script>
-    <script src="../../js/jquery.sticky.js?1765272071"></script>
-    <script src="../../js/featherlight.min.js?1765272071"></script>
-    <script src="../../js/highlight.pack.js?1765272071"></script>
+    <script src="../../js/clipboard.min.js?1765276671"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1765276671"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1765276671"></script>
+    <script src="../../js/jquery.sticky.js?1765276671"></script>
+    <script src="../../js/featherlight.min.js?1765276671"></script>
+    <script src="../../js/highlight.pack.js?1765276671"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1765272071"></script>
-    <script src="../../js/learn.js?1765272071"></script>
-    <script src="../../js/hugo-learn.js?1765272071"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1765276671"></script>
+    <script src="../../js/learn.js?1765276671"></script>
+    <script src="../../js/hugo-learn.js?1765276671"></script>
 
-    <link href="../../mermaid/mermaid.css?1765272071" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1765272071"></script>
+    <link href="../../mermaid/mermaid.css?1765276671" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1765276671"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
